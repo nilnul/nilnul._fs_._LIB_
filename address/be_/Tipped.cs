@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace nilnul.fs.address.be_
+{
+	public class Tipped : BeI
+	{
+		public bool be(Address obj)
+		{
+			return nilnul.fs._address_.path.be_.Tipped.Eval(obj.path);
+
+			throw new NotImplementedException();
+		}
+
+		static public readonly Tipped SingletonInstance = nilnul.obj.SingletonByDefault<Tipped>.Instance;
+
+	}
+}

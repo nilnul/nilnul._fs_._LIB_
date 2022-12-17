@@ -1,0 +1,7 @@
+You can use something like the following, in other words, create the directory structure by hand:
+
+using (var fs = new FileStream("1.zip", FileMode.Create))
+using (var zip = new ZipArchive(fs, ZipArchiveMode.Create))
+{
+    zip.CreateEntry("12/3/"); // just end with "/"
+}

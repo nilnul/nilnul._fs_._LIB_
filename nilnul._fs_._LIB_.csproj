@@ -1,0 +1,2470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E04D4B6-65C2-4284-9BCD-6BCFFBD243B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nilnul.fs</RootNamespace>
+    <AssemblyName>nilnul._fs_._LIB_</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>false</Deterministic>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>default</LangVersion>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Deterministic>false</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Hbue40|AnyCPU'">
+    <OutputPath>bin\Hbue40\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '_Release|AnyCPU'">
+    <OutputPath>bin\_Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'git|AnyCPU'">
+    <OutputPath>bin\git\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Symbols4Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Symbols4Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Symbol0n1|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Symbol\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Symbol|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Symbol\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <!--<LangVersion>default</LangVersion>-->
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Nuget|AnyCPU'">
+    <OutputPath>bin\Nuget\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <!--<LangVersion>7.3</LangVersion>-->
+    <!--<LangVersion>default</LangVersion>-->
+    <LangVersion>latest</LangVersion>
+    <!--<LangVersion>preview</LangVersion>-->
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>t.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetZip, Version=1.16.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\DotNetZip.1.16.0\lib\net40\DotNetZip.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul.collection_._discrete_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230">
+      <HintPath>..\..\(packages)\nilnul.collection_._discrete_._LIB_.1.1.220728.140313\lib\net48\nilnul.collection_._discrete_._LIB_.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nilnul.num._integer_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul.num._integer_._LIB_.1.1.220905.105721\lib\net481\nilnul.num._integer_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul.num._quotient_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul.num._quotient_._LIB_.1.1.220926.131208\lib\net481\nilnul.num._quotient_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul.num._real_._LIB_, Version=2.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230">
+      <HintPath>..\..\(packages)\nilnul.num._real_._LIB_.2.1.220818.53104\lib\net48\nilnul.num._real_._LIB_.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nilnul._bit_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._bit_._LIB_.1.1.221129.150825\lib\net481\nilnul._bit_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._character_._LIB_, Version=2.1.8343.38579, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._character_._LIB_.2.1.221104.132532\lib\net481\nilnul._character_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._num_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._num_._LIB_.1.1.220826.15831\lib\net481\nilnul._num_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._num_._LINQ_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._num_._LINQ_.1.1.220825.155237\lib\net481\nilnul._num_._LINQ_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._obj_._LIB_, Version=1.2.0.0, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._obj_._LIB_.1.2.221126.72816\lib\net481\nilnul._obj_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._rel_._LIB_, Version=1.2.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230">
+      <HintPath>..\..\(packages)\nilnul._rel_._LIB_.1.2.220817.152548\lib\net48\nilnul._rel_._LIB_.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nilnul._set_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._set_._LIB_.1.1.220905.140119\lib\net481\nilnul._set_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._time_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._time_._LIB_.1.1.221120.114651\lib\net481\nilnul._time_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._txt_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._txt_._LIB_.1.1.221129.160511\lib\net481\nilnul._txt_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Linq.Expressions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\System.Linq.Expressions.4.3.0\lib\net463\System.Linq.Expressions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Serialization" />
+    <Reference Include="_nilnul_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\_nilnul_._LIB_.1.1.220819.143251\lib\net481\_nilnul_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="_nilnul_._LINQ_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\_nilnul_._LINQ_.1.1.220819.143032\lib\net481\_nilnul_._LINQ_.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addresses_\disjoint\IDestinations.cs" />
+    <Compile Include="address\be_\shield\Anto1.cs" />
+    <Compile Include="address\nulable\to_\Overlong.cs" />
+    <Compile Include="address_\based_\BaseDst - Copy.cs" />
+    <Compile Include="address_\NewFolder1\AddressA.cs" />
+    <Compile Include="Addresses.cs" />
+    <Compile Include="addresses\filtered_\locations\divisions\find\Log.cs" />
+    <Compile Include="addresses\filtered_\locations\divisions\_FindX.cs" />
+    <Compile Include="addresses\filtered_\locations\Documents.cs" />
+    <Compile Include="addresses\filtered_\locations\_DivisionsX.cs" />
+    <Compile Include="addresses\filtered_\_LocationsX.cs" />
+    <Compile Include="addresses\_parse\Check.cs" />
+    <Compile Include="addresses_\Disjoint1.cs" />
+    <Compile Include="addresses_\disjoint\Extensions.cs" />
+    <Compile Include="addresses_\disjoint\_lex\_parse\Check.cs" />
+    <Compile Include="addresses_\disjoint_\EndMatters.cs" />
+    <Compile Include="addresses_\disjoint_\endMatters\Extensions.cs" />
+    <Compile Include="addresses_\disjoint_\endMatters_\Lst.cs" />
+    <Compile Include="addresses_\IgnoreNul.cs" />
+    <Compile Include="AddressA1.cs" />
+    <Compile Include="addresses\_PhraseX.cs" />
+    <Compile Include="addresses_\disjoint_\Lst.cs" />
+    <Compile Include="AddressI1.cs" />
+    <Compile Include="AddressI.cs" />
+    <Compile Include="address\BeI.cs" />
+    <Compile Include="address\BeI1.cs" />
+    <Compile Include="address\be\Anto - Copy.cs" />
+    <Compile Include="address\be\Anto.cs" />
+    <Compile Include="address\be\anto_\Anto - Copy.cs" />
+    <Compile Include="address\be\anto_\BeDefault - Copy.cs" />
+    <Compile Include="address\be\anto_\BeDefault.cs" />
+    <Compile Include="address\be\op_\BinaryI.cs" />
+    <Compile Include="address\be\op_\binary_\And.cs" />
+    <Compile Include="address\be\op_\binary_\Or.cs" />
+    <Compile Include="address\be\op_\binary_\_and\Ret.cs" />
+    <Compile Include="address\be\op_\binary_\_and\ret_\Ret.cs" />
+    <Compile Include="address\be\op_\binary_\_or\Ret - Copy.cs" />
+    <Compile Include="address\be\op_\binary_\_or\Ret.cs" />
+    <Compile Include="address\be\op_\binary_\_or\ret_\Ret - Copy.cs" />
+    <Compile Include="address\be\op_\binary_\_or\ret_\Ret.cs" />
+    <Compile Include="address\be\Vow - Copy.cs" />
+    <Compile Include="address\be\Vow.cs" />
+    <Compile Include="address\be\vow_\BeDefault - Copy.cs" />
+    <Compile Include="address\be\vow_\BeDefault.cs" />
+    <Compile Include="address\be\vow_\Vow.cs" />
+    <Compile Include="address\be_\Folderable - Copy.cs" />
+    <Compile Include="address\be_\folderable\Anto.cs" />
+    <Compile Include="address\be_\file\Anto.cs" />
+    <Compile Include="address\be_\folderable\Vow - Copy.cs" />
+    <Compile Include="address\be_\folderable\Vow.cs" />
+    <Compile Include="address\be_\folderable\vow\Ee - Copy.cs" />
+    <Compile Include="address\be_\folderable\vow\Ee.cs" />
+    <Compile Include="address\be_\folder_\Empty.cs" />
+    <Compile Include="address\be_\%28retiring\Location - Copy.cs" />
+    <Compile Include="address\be_\Location%28T.cs" />
+    <Compile Include="address\be_\location\Anto - Copy.cs" />
+    <Compile Include="address\be_\New0Empty - Copy.cs" />
+    <Compile Include="address\be_\Occupied.cs" />
+    <Compile Include="address\be_\New0Empty.cs" />
+    <Compile Include="address\be_\Folderable.cs" />
+    <Compile Include="address\be_\Location.cs" />
+    <Compile Include="address\be_\Folder1.cs" />
+    <Compile Include="address\be_\location\Anto.cs" />
+    <Compile Include="address\be_\location\vow\En.cs" />
+    <Compile Include="address\be_\occupied\Anto.cs" />
+    <Compile Include="address\be_\occupied\Vow.cs" />
+    <Compile Include="address\be_\occupied\vow\En.cs" />
+    <Compile Include="address\be_\Shield.cs" />
+    <Compile Include="address\be_\Spear.cs" />
+    <Compile Include="address\be_\spear\Vow.cs" />
+    <Compile Include="address\be_\spear\vow\En.cs" />
+    <Compile Include="address\be_\unoccupied\Vow.cs" />
+    <Compile Include="address\be_\unoccupied\vow\Ee.cs" />
+    <Compile Include="address\be_\_location_\Location%28T.cs" />
+    <Compile Include="address\be_\_shield\txt\Shield.cs" />
+    <Compile Include="address\co_\addressShield_\sup\_DifX.cs" />
+    <Compile Include="address\co_\shieldAddress\be_\sup\Anto.cs" />
+    <Compile Include="address\co_\shieldAddress\be_\Sup.cs" />
+    <Compile Include="address\co_\shieldSpear\be_\Sup.cs" />
+    <Compile Include="address\co_\spearShield_\containing\_DifX.cs" />
+    <Compile Include="address\co_\spearShield\be_\Sub.cs" />
+    <Compile Include="address\eq_\asShield\OrSameDestinyWhenFolder.cs" />
+    <Compile Include="address\Categorize.cs" />
+    <Compile Include="address\nulable\parse_\_EmptyAsNulX.cs" />
+    <Compile Include="address\nulable\Re.cs" />
+    <Compile Include="address\nulable\re_\Joint_ignoreNul.cs" />
+    <Compile Include="address\nulable\re_\JointOnPadded.cs" />
+    <Compile Include="address\Prefeixed.cs" />
+    <Compile Include="address\prefixed\Eq.cs" />
+    <Compile Include="address\Meaning.cs" />
+    <Compile Include="address\Comparer.cs" />
+    <Compile Include="address\co\Traject.cs" />
+    <Compile Include="address\co_\shieldAddress\Trail.cs" />
+    <Compile Include="address\co_\shieldSpear\Path.cs" />
+    <Compile Include="address\Dsts.cs" />
+    <Compile Include="address\EqX.cs" />
+    <Compile Include="address\eq\Ne.cs" />
+    <Compile Include="address\eq_\AsShield.cs" />
+    <Compile Include="address\nulable\comp_\Cn.cs" />
+    <Compile Include="address\re\complement_\ReDefault.cs" />
+    <Compile Include="address\re_\Joint.cs" />
+    <Compile Include="address\re_\joint\Complement.cs" />
+    <Compile Include="address\VowI - Copy.cs" />
+    <Compile Include="address\vow\ee_\VowDefault - Copy.cs" />
+    <Compile Include="address\vow\NewFolder1\Ee.cs" />
+    <Compile Include="address\_categorize\Category.cs" />
+    <Compile Include="address\_RegressionsX.cs" />
+    <Compile Include="address_\Folderable.cs" />
+    <Compile Include="address_\folderable_\xpn_\OccupiedByFileException.cs" />
+    <Compile Include="address_\nonrt\_ToSpearX.cs" />
+    <Compile Include="address_\nonrt\_ToeX.cs" />
+    <Compile Include="address_\occupied\Categorize.cs" />
+    <Compile Include="address_\Shield%28.cs" />
+    <Compile Include="address_\shield\%28retiring\BeI1.cs" />
+    <Compile Include="address_\shield\BeI.cs" />
+    <Compile Include="address_\shield_\based_\child\%28retiring\BeI - Copy.cs" />
+    <Compile Include="address_\shield_\based_\child\be_\%28retiring\Exist - Copy.cs" />
+    <Compile Include="address_\shield_\based_\child\be_\exist\Vow - Copy.cs" />
+    <Compile Include="address_\shield_\based_\child\be_\exist\vow\%28retiring\En - Copy.cs" />
+    <Compile Include="address_\shield_\based_\child_\Exist.cs" />
+    <Compile Include="address_\shield_\based_\div_\NewFolder1\DivFroDivision1.cs" />
+    <Compile Include="address_\shield_\IFolderable.cs" />
+    <Compile Include="address_\shield_\Xpn.cs" />
+    <Compile Include="address_\shield_\xpn_\Parse.cs" />
+    <Compile Include="address_\spear\%28retiring\BeX.cs" />
+    <Compile Include="address_\spear\BeI%28T.cs" />
+    <Compile Include="address_\spear\BeX1.cs" />
+    <Compile Include="address_\spear\be\_ExtensionsX.cs" />
+    <Compile Include="address_\spear\be\Vow%28T.cs" />
+    <Compile Include="address_\spear\be\vow_\BeDefault%28T.cs" />
+    <Compile Include="address_\spear\be_\File%28T.cs" />
+    <Compile Include="address_\spear\be_\Ext - Copy.cs" />
+    <Compile Include="address_\spear\be_\ext\Vow - Copy.cs" />
+    <Compile Include="address_\spear\be_\file\Vow%28T.cs" />
+    <Compile Include="address_\spear\be_\file\vow\Ee%28T.cs" />
+    <Compile Include="address_\spear\be_\newable\Vow - Copy.cs" />
+    <Compile Include="address_\spear\be_\newable\vow\Ee - Copy.cs" />
+    <Compile Include="address_\spear\op_\To.cs" />
+    <Compile Include="address_\spear\to_\Info.cs" />
+    <Compile Include="address_\spear\VowI%28T.cs" />
+    <Compile Include="address_\spear\vow\Ee%28T.cs" />
+    <Compile Include="address_\spear\vow\ee_\VowDefault%28T.cs" />
+    <Compile Include="address_\spear_\based_\child_\NewFolder1\AsExted - Copy.cs" />
+    <Compile Include="address_\spear_\Creatable - Copy.cs" />
+    <Compile Include="address_\spear_\newable_\Ext - Copy.cs" />
+    <Compile Include="address_\spear_\newable_\ext_\NewFolder1\Zip - Copy.cs" />
+    <Compile Include="address_\_Shield0SpearX.cs" />
+    <Compile Include="address_\ShieldA%28.cs" />
+    <Compile Include="address_\ShieldI1 - Copy.cs" />
+    <Compile Include="address_\shield\BeI%28T - Copy.cs" />
+    <Compile Include="address_\shield\be\NewFolder1\Vow.cs" />
+    <Compile Include="address_\shield\be\Vow%28T.cs" />
+    <Compile Include="address_\shield\be\vow_\Vow%28T.cs" />
+    <Compile Include="address_\shield\be_\exist\Vow.cs" />
+    <Compile Include="address_\shield\be_\exist\vow\Ee.cs" />
+    <Compile Include="address_\shield\be_\Occupied.cs" />
+    <Compile Include="address_\shield\be_\file\Anto.cs" />
+    <Compile Include="address_\shield\be_\file\Vow.cs" />
+    <Compile Include="address_\shield\be_\file\vow\Ee.cs" />
+    <Compile Include="address_\shield\be_\folder\Vow.cs" />
+    <Compile Include="address_\shield\be_\folder\vow\Ee.cs" />
+    <Compile Include="address_\shield\be_\newable\vow\Ee.cs" />
+    <Compile Include="address_\shield\be_\Exist.cs" />
+    <Compile Include="address_\shield\eq\EqX.cs" />
+    <Compile Include="address_\shield\eq_\Tgt.cs" />
+    <Compile Include="address_\shield\op_\of_\Address - Copy.cs" />
+    <Compile Include="address_\shield\op_\of_\Spear - Copy.cs" />
+    <Compile Include="address_\shield\op_\unary\Extensions.cs" />
+    <Compile Include="address_\shield\op_\unary_\TgtX.cs" />
+    <Compile Include="address_\shield\TgtX.cs" />
+    <Compile Include="address_\shield\%28retiring\VowI - Copy.cs" />
+    <Compile Include="address_\shield\vow\ee_\En%28TContainer,TBe - Copy.cs" />
+    <Compile Include="address_\shield\vow\ee_\NewFolder1\VowDefault.cs" />
+    <Compile Include="address_\shield\vow\En%28TContainer,TBe - Copy.cs" />
+    <Compile Include="address_\shield\Vow%28T.cs" />
+    <Compile Include="address_\shield\vow\NewFolder1\Ee.cs" />
+    <Compile Include="address_\shield_\based_\div_\BasedDirectory.cs" />
+    <Compile Include="address_\shield_\based_\child_\NewFolder1\BaseDir - Copy.cs" />
+    <Compile Include="address_\shield_\%28retiring\Exist1 - Copy.cs" />
+    <Compile Include="address_\shield_\based_\NewFolder1\NewFolder1\BaseDiv.cs" />
+    <Compile Include="address_\shield_\based_\NewFolder1\BaseDiv.cs" />
+    <Compile Include="address_\shield_\Exist%28T.cs" />
+    <Compile Include="address_\Spear%281 - Copy.cs" />
+    <Compile Include="address_\SpearA%28.cs" />
+    <Compile Include="address_\SpearI%28.cs" />
+    <Compile Include="address_\SpearI1.cs" />
+    <Compile Include="address_\spear\BeI1.cs" />
+    <Compile Include="address_\spear\be\%28retiring\Vow - Copy.cs" />
+    <Compile Include="address_\spear\be\vow_\BeDefault - Copy.cs" />
+    <Compile Include="address_\spear\be_\file\Vow - Copy.cs" />
+    <Compile Include="address_\spear\be_\file\vow\Ee - Copy.cs" />
+    <Compile Include="address_\spear\be_\file\vow\NewFolder1\Ee.cs" />
+    <Compile Include="address_\spear\be_\folder\Vow.cs" />
+    <Compile Include="address_\spear\be_\folder\vow\Ee.cs" />
+    <Compile Include="address_\spear\be_\newable\vow\Ee1.cs" />
+    <Compile Include="address_\spear\IntendFolder.cs" />
+    <Compile Include="address_\spear\op_\Unary.cs" />
+    <Compile Include="address_\spear\TgtX.cs" />
+    <Compile Include="address_\spear\%28retiring\NewFolder1\VowI - Copy.cs" />
+    <Compile Include="address_\spear\vow\%28retiring\Ee.cs" />
+    <Compile Include="address_\spear\vow\ee_\VowDefault - Copy.cs" />
+    <Compile Include="address_\spear_\based_\Child.cs" />
+    <Compile Include="address_\spear_\based_\NewFolder1\Child.cs" />
+    <Compile Include="address_\spear_\based_\NewFolder1\_ParentDocumentX.cs" />
+    <Compile Include="address_\Xpn.cs" />
+    <Compile Include="address_\shield\op_\Unary.cs" />
+    <Compile Include="address_\shield\op_\unary_\Up.cs" />
+    <Compile Include="address_\spear\be_\Lnk.cs" />
+    <Compile Include="address_\spear\%28retiring\VowI - Copy.cs" />
+    <Compile Include="address_\spear\vow\Ee.cs" />
+    <Compile Include="address_\spear\vow\ee_\NewFolder1\VowDefault.cs" />
+    <Compile Include="address_\spear_\based_\child_\AsExted.cs" />
+    <Compile Include="address_\spear_\Ext.cs" />
+    <Compile Include="address_\xpn_\txt_\Invalid.cs" />
+    <Compile Include="address_\_shield_\Stem%281 - Copy.cs" />
+    <Compile Include="address_\_spear_\Sprig%281.cs" />
+    <Compile Include="File%28T.cs" />
+    <Compile Include="file\ISlice.cs" />
+    <Compile Include="file\op_\To.cs" />
+    <Compile Include="file\Size.cs" />
+    <Compile Include="file\split_\_ThinToeX.cs" />
+    <Compile Include="folders_\IUnjointByDelinked.cs" />
+    <Compile Include="folders_\unjoint\each\div_\INonbacktrack.cs" />
+    <Compile Include="folders_\unjoint\each\div_\nonrepeat\dir\InsideNonrepeats.cs" />
+    <Compile Include="folders_\unjoint\each\div_\nonrepeat\dir_\link\InsideNonrepeats.cs" />
+    <Compile Include="folders_\unjoint\each\div_\nonrepeat\dir_\unjoint\InsideNonrepeats.cs" />
+    <Compile Include="folders_\unjoint\each\div_\nonrepeat\InsideNonrepeats.cs" />
+    <Compile Include="folders_\unjoint\each\div_\Nonrepeats.cs" />
+    <Compile Include="folders_\unjoint\every\div_\NonrepeatsX.cs" />
+    <Compile Include="folders_\unjoint\every\div_\_nonrepeats\Io.cs" />
+    <Compile Include="folders_\unjoint\every\div_\Nonrepeats.cs" />
+    <Compile Include="folder\be\Extensions.cs" />
+    <Compile Include="folder\be_\Cropless.cs" />
+    <Compile Include="folder\be_\Neglect.cs" />
+    <Compile Include="folder\be_\FileSplit.cs" />
+    <Compile Include="folder\be_\_NeglectX.cs" />
+    <Compile Include="folder\cfg_\INilnul0.cs" />
+    <Compile Include="folder\cfg_\_nn\clob_\Xml.cs" />
+    <Compile Include="folder\cfg_\_nn\clob_\_xml\Schema.cs" />
+    <Compile Include="folder\cfg_\_nn\ext_\IUsr.cs" />
+    <Compile Include="folder\cfg_\_nn\ISelf.cs" />
+    <Compile Include="folder\cfg_\_nn\IChild.cs" />
+    <Compile Include="folder\directories_\_UnjointX.cs" />
+    <Compile Include="folder\dirs_\IListed.cs" />
+    <Compile Include="folder\dirs_\IUnlisted.cs" />
+    <Compile Include="folder\dirs_\listed_\INottDotLed.cs" />
+    <Compile Include="folder\dirs_\notDotLed_\IListed.cs" />
+    <Compile Include="folder\dirs_\_ConsideredX.cs" />
+    <Compile Include="folder\dirs_\notDotLed_\_NonlinkX.cs" />
+    <Compile Include="folder\dirs_\_NonlinkX.cs" />
+    <Compile Include="folder\dir_\cfg_\IForNilnul.cs" />
+    <Compile Include="folder\_cfg\_destination\_dnt\ext_\IXec.cs" />
+    <Compile Include="folder\_cfg\_destination\_dnt\_exts\Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings1.settings</DependentUpon>
+    </Compile>
+    <Compile Include="folder\_cfg_\div\dir_\active\_EnsureX.cs" />
+    <Compile Include="folder\_cfg_\div\dst_\Exteds.cs" />
+    <Compile Include="folder\_cfg_\directory_\active\_EnsureX.cs" />
+    <Compile Include="folder\dir_\cfg_\nn_\exted_\active\_EnsureX.cs" />
+    <Compile Include="folder\dir_\IListed.cs" />
+    <Compile Include="folder\dir_\IUnlisted.cs" />
+    <Compile Include="folder\dir_\listed_\INottDotLed.cs" />
+    <Compile Include="folder\dir_\vered_\newest\EnsureEmpty.cs" />
+    <Compile Include="folder\division_\IOmnilisted.cs" />
+    <Compile Include="folder\division_\omnilisted_\INoDotLed.cs" />
+    <Compile Include="folder\div_\omnilisted_\INoDotLed.cs" />
+    <Compile Include="folder\dnts_\IUnlisted.cs" />
+    <Compile Include="folder\dnts_\_ignored\ICfg.cs" />
+    <Compile Include="folder\dnts_\_unlist\_cfg_\doc_\_DefaultX.cs" />
+    <Compile Include="folder\dnts_\_unlist\_cfg_\_doc\_BlobX.cs" />
+    <Compile Include="folder\dnt_\%28retiring\Vereds - Copy.cs" />
+    <Compile Include="folder\dnt_\cfg_\INn.cs" />
+    <Compile Include="folder\dst_\cfg_\nn_\Exteds.cs" />
+    <Compile Include="folder\dnt_\cfg_\nn_\IVered.cs" />
+    <Compile Include="folder\dnt_\ICfg.cs" />
+    <Compile Include="folder\dnt_\IUnlisted.cs" />
+    <Compile Include="folder\dnt_\IListed.cs" />
+    <Compile Include="folder\dnt_\listed_\INottDotLed.cs" />
+    <Compile Include="folder\dnt_\mainVered_\minVer_\NewFolder1\Next.cs" />
+    <Compile Include="folder\dnt_\vered_\next\NewFolder1\_CreateFolderX.cs" />
+    <Compile Include="folder\dnt_\vered_\%28retiring\_NextX - Copy.cs" />
+    <Compile Include="folder\docs_\notDotLed_\_NormalX.cs" />
+    <Compile Include="folder\docs_\_ConsideredX.cs" />
+    <Compile Include="folder\docs_\_NotDotLedX.cs" />
+    <Compile Include="folder\doc\be_\Symlink.cs" />
+    <Compile Include="folder\doc_\cfg_\INn.cs" />
+    <Compile Include="folder\doc_\cfg_\nn_\InXml.cs" />
+    <Compile Include="folder\dsts_\IUnlisted.cs" />
+    <Compile Include="folder\dst_\Vereds.cs" />
+    <Compile Include="file\split\Reassemble.cs" />
+    <Compile Include="folder\ICfg.cs" />
+    <Compile Include="folder\IChild.cs" />
+    <Compile Include="folder\IDelink.cs" />
+    <Compile Include="folder\IDnt.cs" />
+    <Compile Include="folder\to_\NewFolder1\_DirInfoX - Copy.cs" />
+    <Compile Include="folder\_cfg_\div\doc_\active\_VwX.cs" />
+    <Compile Include="folder\_cfg_\_DntX.cs" />
+    <Compile Include="NewFolder1\FileI1 - Copy.cs" />
+    <Compile Include="file\be_\exT_\Lnk.cs" />
+    <Compile Include="file\be_\Nonlink.cs" />
+    <Compile Include="file\be_\nonlink\Vow.cs" />
+    <Compile Include="file\be_\nonlink\vow\Ee.cs" />
+    <Compile Include="file\Drop.cs" />
+    <Compile Include="file\ntfs_\flow_\Unsafe.cs" />
+    <Compile Include="file\nulable\Parse.cs" />
+    <Compile Include="file_\link_\sym\Tgt.cs" />
+    <Compile Include="file_\link_\sym_\Path.cs" />
+    <Compile Include="file_\link_\sym_\path\Create.cs" />
+    <Compile Include="file_\Newest.cs" />
+    <Compile Include="file_\nonlink\coerce_\Tgt.cs" />
+    <Compile Include="file_\Normal.cs" />
+    <Compile Include="file_\ntfs_\Meta.cs" />
+    <Compile Include="file_\ntfs_\meta\Drop.cs" />
+    <Compile Include="file_\shortcut\ToSymlink.cs" />
+    <Compile Include="file_\shortcut_\Rel.cs" />
+    <Compile Include="file_\ext_\zip\entry_\crypted\CreateZip.cs" />
+    <Compile Include="file_\txt\co\diff_\DiffMerge.cs" />
+    <Compile Include="Folder2 - Copy.cs" />
+    <Compile Include="Folderable.cs" />
+    <Compile Include="folderable\destinations\Link.cs" />
+    <Compile Include="FolderI%28T - Copy.cs" />
+    <Compile Include="folder\BeI - Copy.cs" />
+    <Compile Include="folder\be_\Empty1.cs" />
+    <Compile Include="folder\destinations_\NewFolder1\Accounted.cs" />
+    <Compile Include="folder\destinations_\NewFolder1\NoIgnored.cs" />
+    <Compile Include="folder\directory\Directory.cs" />
+    <Compile Include="folder\dir_\link_\sym\_create\NewFolder1\_DllImportX - Copy.cs" />
+    <Compile Include="folder\divisions_\NewFolder1\Self0accounted.cs" />
+    <Compile Include="folder\divisions_\NewFolder1\Unignored.cs" />
+    <Compile Include="folder\dnts_\NewFolder1\Ignored.cs" />
+    <Compile Include="folder\Dsts - Copy.cs" />
+    <Compile Include="folder\dsts_\NewFolder1\Accounted.cs" />
+    <Compile Include="folder\op_\NewFolder1\ToI.cs" />
+    <Compile Include="folder\to_\NewFolder1\_DirInfoX.cs" />
+    <Compile Include="folder_\based_\NewFolder1\ParentDir.cs" />
+    <Compile Include="location_\link_\sym\create_\by_\_DllImportX.cs" />
+    <Compile Include="IFolder.cs" />
+    <Compile Include="FolderI3 - Copy.cs" />
+    <Compile Include="folders\be_\destinyDisjoint\VowOfSeq.cs" />
+    <Compile Include="folders\be_\destinyDisjoint\vow\EeOfSeq.cs" />
+    <Compile Include="folders\be_\DisjointEventually.cs" />
+    <Compile Include="folder\be\extensions_\BeI.cs" />
+    <Compile Include="folder\be_\link_\sym_\Tip.cs" />
+    <Compile Include="folder\be_\link_\sym_\tip\Anto.cs" />
+    <Compile Include="folder\be_\link_\sym_\tip\anto\Vow.cs" />
+    <Compile Include="folder\be_\link_\sym_\tip\anto\vow\Ee.cs" />
+    <Compile Include="folder\Content.cs" />
+    <Compile Include="folder\destinations_\Considered.cs" />
+    <Compile Include="folder\dir\be_\Empty.cs" />
+    <Compile Include="folder\dir\Drop.cs" />
+    <Compile Include="folder\dir\drop_\Permanent.cs" />
+    <Compile Include="folder\dir_\vered\dir_\Vered.cs" />
+    <Compile Include="folder\dir_\vered_\Unnamed.cs" />
+    <Compile Include="folder\divisions_\Self0accounted.cs" />
+    <Compile Include="folder\div\be_\AnySym.cs" />
+    <Compile Include="folder\dnt_\%28retiring\Vereds.cs" />
+    <Compile Include="folder\dnt_\cfg\Settings1.cs" />
+    <Compile Include="folder\dnt_\cfg\Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings1.settings</DependentUpon>
+    </Compile>
+    <Compile Include="folder\dnt_\vered_\%28retiring\_NewestX.cs" />
+    <Compile Include="folder\dnt_\vered_\newest_\_folder\NewFolder1\_EnsureFolderX.cs" />
+    <Compile Include="folder\docs_\ext_\_LnkX.cs" />
+    <Compile Include="folder\doc_\exted_\vered_\Newest.cs" />
+    <Compile Include="folder\doc_\exted_\vered_\Next.cs" />
+    <Compile Include="folder\doc_\ext_\Note.cs" />
+    <Compile Include="folder\doc_\nilnulCfg\Settings1.cs" />
+    <Compile Include="folder\doc_\nilnulCfg\Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings1.settings</DependentUpon>
+    </Compile>
+    <Compile Include="folder\Dst.cs" />
+    <Compile Include="folder\dsts_\Considered.cs" />
+    <Compile Include="folder\dst_\vered_\_NewestX.cs" />
+    <Compile Include="folder\eq_\TargetSame.cs" />
+    <Compile Include="folder_\Child.cs" />
+    <Compile Include="folder_\child_\nonlink\dir_\nonlink_\Empty1namesakes.cs" />
+    <Compile Include="folder_\child_\nonlink\dir_\nonlink_\empty1namesakes\Del.cs" />
+    <Compile Include="folder_\Newest.cs" />
+    <Compile Include="folder_\nonlinks\be_\DisjointEventually.cs" />
+    <Compile Include="BlobI.cs" />
+    <Compile Include="location\Attr.cs" />
+    <Compile Include="location\ntfs_\Flow.cs" />
+    <Compile Include="location\TgtX.cs" />
+    <Compile Include="location_\Newest.cs" />
+    <Compile Include="nilnul0\txt0nul\eq_\fs_\backslashed_\EnsureEndDeck.cs" />
+    <Compile Include="nilnul0\txt0nul\eq_\fs_\Backslashed.cs" />
+    <Compile Include="nilnul0\txt\eq_\fs_\backslashed_\EnsureEndDeck.cs" />
+    <Compile Include="nilnul0\txt\eq_\fs_\Backslashed.cs" />
+    <Compile Include="nilnul0\txt\op_\unary_\fs_\Backslashed.cs" />
+    <Compile Include="nilnul0\txt\op_\unary_\fs_\backslashed_\EndWithDeck.cs" />
+    <Compile Include="IPac.cs" />
+    <Compile Include="path\co_\starT_\shield_\enD_\denotation_\dntAppended\Concat.cs" />
+    <Compile Include="path\co_\starT_\spear_\enD_\denotation_\dntAppended\Concat.cs" />
+    <Compile Include="path\Doc.cs" />
+    <Compile Include="path_\contextual_\rted_\Rted.cs" />
+    <Compile Include="path_\contextual_\rted_\tipped_\DntEnded.cs" />
+    <Compile Include="path_\contextual_\_route\division\co_\starT_\div_\enD_\denotation_\DivDenotation.cs" />
+    <Compile Include="path_\contextual_\_route\division_\denotation_\DntAppended.cs" />
+    <Compile Include="path_\full_\tipped_\DntEnd.cs" />
+    <Compile Include="path_\IFull.cs" />
+    <Compile Include="_address\dnt\be_\DotLed.cs" />
+    <Compile Include="_address\RouteA.cs" />
+    <Compile Include="_address\route\BeI1.cs" />
+    <Compile Include="_address\route\co_\routeStem_\sup\RelPath.cs" />
+    <Compile Include="_address\route\co_\stemSprig_\sup\Dif.cs" />
+    <Compile Include="_address\route\ReI2 - Copy.cs" />
+    <Compile Include="_address\route\re\complement_\ReDefault.cs" />
+    <Compile Include="_address\route\re_\Joint.cs" />
+    <Compile Include="_address\route\re_\joint\Complement.cs" />
+    <Compile Include="_address\route_\based_\NewFolder1\BaseDst.cs" />
+    <Compile Include="_address\route_\Sprig1%284.cs" />
+    <Compile Include="_address\route_\SprigA.cs" />
+    <Compile Include="_address\route_\sprig\%28retiring\BeI.cs" />
+    <Compile Include="_address\route_\sprig\be_\Ext - Copy.cs" />
+    <Compile Include="_address\route_\sprig\co_\sup\RelPath.cs" />
+    <Compile Include="_address\route_\sprig\op_\to_\Stem - Copy %282%29.cs" />
+    <Compile Include="_address\route_\sprig_\NewFolder1\StemDocument.cs" />
+    <Compile Include="_address\route_\sprig_\StemDoc2 - Copy.cs" />
+    <Compile Include="_address\route_\Stem%28.cs" />
+    <Compile Include="_address\route_\StemA.cs" />
+    <Compile Include="_address\route_\StemI.cs" />
+    <Compile Include="_address\route_\stem\co_\sup\_DifX2 - Copy.cs" />
+    <Compile Include="_address\route_\stem\op_\of_\_RouteX2 - Copy.cs" />
+    <Compile Include="_address\route_\stem\op_\of_\_SprigX1 - Copy.cs" />
+    <Compile Include="_address\route_\stem_\based_\ParentDir - Copy.cs" />
+    <Compile Include="_address\route_\stem_\based_\ParentDiv - Copy.cs" />
+    <Compile Include="_address\vol\rt\Dnts.cs" />
+    <Compile Include="_address\vol\rt\dnts_\Reserved.cs" />
+    <Compile Include="_address\_route\division\BeI.cs" />
+    <Compile Include="_address\_route\division\be_\Div - Copy.cs" />
+    <Compile Include="_address\_route\division\co_\denotationDivision\be_\Sup.cs" />
+    <Compile Include="_address\_route\division\co_\denotationDiv\be_\Sup.cs" />
+    <Compile Include="_address\_route\division\co_\divDenotation\be_\Sup.cs" />
+    <Compile Include="_address\_route\division\co_\divDenotation_\sup\RelPath - Copy.cs" />
+    <Compile Include="_address\_route\division\co_\divDenotation_\sup\RelPath.cs" />
+    <Compile Include="_address\_route\division\co_\denotationDiv_\sup\RelPath.cs" />
+    <Compile Include="_address\_route\division\co_\divDivision\be_\Sup.cs" />
+    <Compile Include="_address\_route\division\co_\divisionDiv_\sup\RelPath.cs" />
+    <Compile Include="_address\_route\division\op_\to_\ToDiv.cs" />
+    <Compile Include="_address\_route\division\re\anto_\ReDefault.cs" />
+    <Compile Include="_address\_route\division\re\converse_\ReDefault - Copy.cs" />
+    <Compile Include="_address\_route\division\re_\joint\Complement.cs" />
+    <Compile Include="_address\_route\division_\denotation\be_\Ext - Copy.cs" />
+    <Compile Include="_address\_route\division_\denotation\co_\sup\RelPath.cs" />
+    <Compile Include="_address\_route\division_\denotation\NewFolder1\BeI.cs" />
+    <Compile Include="_address\_route\division_\denotation\NewFolder1\Eq - Copy.cs" />
+    <Compile Include="_address\_route\division_\denotation\op_\to_\Div1 - Copy.cs" />
+    <Compile Include="_address\_route\division_\denotation\NewFolder1\Regressions - Copy.cs" />
+    <Compile Include="_address\_route\division_\denotation\re_\Sup.cs" />
+    <Compile Include="_address\_route\division_\denotation\Set - Copy.cs" />
+    <Compile Include="_address\_route\division_\denotation\set\Map.cs" />
+    <Compile Include="_address\_route\division_\denotation\set\map_\location0nul\op_\unary_\Normalize.cs" />
+    <Compile Include="_address\_route\division_\denotation\set\map_\Location0nul.cs" />
+    <Compile Include="_address\_route\division_\denotation\set\map_\location0nul_\EnsureSameExt.cs" />
+    <Compile Include="_address\_route\division_\denotation\_construe_\phrase_\ByBackslash.cs" />
+    <Compile Include="_address\_route\division_\denotation_\divDenotation_\DivDenotation.cs" />
+    <Compile Include="_address\_route\division_\denotation_\DntedIX.cs" />
+    <Compile Include="_address\_route\division_\denotation_\IDnted.cs" />
+    <Compile Include="_address\_route\division_\denotation_\~\_DivDenotationX.cs" />
+    <Compile Include="_address\_route\division_\destination\byDenotation\set\map_\location0nul_\Normalized.cs" />
+    <Compile Include="_address\_route\division_\destination\byDenotation\set\map_\location0nul\op_\unary_\_normalize_\NewFolder1\Normalize.cs" />
+    <Compile Include="_address\_route\division_\destination\byDenotation\set\map_\location0nul_\NewFolder1\KeyEqAsDenote - Copy.cs" />
+    <Compile Include="_address\_route\division_\destination_\NewFolder1\DirDivision.cs" />
+    <Compile Include="_address\_route\division_\div\%28retiring\Dst.cs" />
+    <Compile Include="_address\_route\division_\div\child_\NewFolder1\Dir.cs" />
+    <Compile Include="_address\_route\division_\div\child_\NewFolder1\Doc.cs" />
+    <Compile Include="_address\_route\division_\div_\directory\Eq - Copy.cs" />
+    <Compile Include="_address\_route\division_\div_\directory\op_\of_\OfDocumentX - Copy.cs" />
+    <Compile Include="_address\_route\division_\div_\directory\op_\of_\_DestinationX.cs" />
+    <Compile Include="_address\_route\division_\div_\directory_\NewFolder1\DirDiv.cs" />
+    <Compile Include="_address\_route\division_\div_\INoDotLed.cs" />
+    <Compile Include="_address\_route\division_\IDenotation.cs" />
+    <Compile Include="_address\_route\division_\INoDotLed.cs" />
+    <Compile Include="_address\_route\division_\NewFolder1\DestinationA - Copy.cs" />
+    <Compile Include="_address\_route\division_\destination\eq_\NewFolder1\NewFolder1\Location - Copy.cs" />
+    <Compile Include="_address\_route\division_\destination\eq_\Location - Copy.cs" />
+    <Compile Include="_address\_route\division_\destination\byDenotation\set\map_\location0nul\op_\unary_\_normalize_\Normalize.cs" />
+    <Compile Include="_address\_route\division_\div\co_\sup\_DifX2 - Copy.cs" />
+    <Compile Include="_address\_route\division_\div\Eq2 - Copy.cs" />
+    <Compile Include="_address\_route\division_\div\op_\Binary - Copy.cs" />
+    <Compile Include="_address\_route\division_\div\op_\binary_\Concat2 - Copy.cs" />
+    <Compile Include="_address\_route\division_\div\op_\of_\_DivisionX2.cs" />
+    <Compile Include="_address\_route\division_\div\op_\of_\_DocumentX1 - Copy.cs" />
+    <Compile Include="_address\_route\division_\div\re_\Sup.cs" />
+    <Compile Include="_address\_route\division_\div\_construe_\phrase_\ByBackslash.cs" />
+    <Compile Include="_address\_route\division_\div_\directory\_construe_\phrase_\ByBackslash.cs" />
+    <Compile Include="_address\_route\division_\div_\directory\op_\of_\_DestinationX - Copy.cs" />
+    <Compile Include="_address\_route\division_\div_\NewFolder1\Directory1.cs" />
+    <Compile Include="_address\_route\division_\NewFolder1\DirDivision.cs" />
+    <Compile Include="_address\_route\division_\NewFolder1\DivDivision.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\Eq2 - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\op_\of_\_DstX2 - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\StrI.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\str_\Started.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\_construe_\phrase_\ByBackslash.cs" />
+    <Compile Include="_address\_route\division_\_div\ISep.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\Dnt.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\%28retiring\Set.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted\NewFolder1\_MainX.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\be\Extensions.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\be_\BeI2.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\be_\be_\Ext2 - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\be_\Ext2.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\Eq - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\op_\of_\Coerce.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\parse_\Parse.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted\NewFolder1\_ExtX1.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted\op_\unary_\EnsureNonempty - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\dotted_\IDotLed.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\IDotLed.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\IDotLed.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\INotDotLed.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\xpn_\IEmpty.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext\BeI - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext\be\Anto - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext\be\anto_\BeDefault - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext\be_\Empty - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext\be_\empty\Anto - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext\be_\Ext - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext\eq\Ne - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\Dwelt - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\Empty - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\nonempty_\OvAftDot - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\nonempty_\ovAftDot_\Lnk.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\_nonempty\aftDot\be\vow_\beDefault\Ee.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\_nonempty\aftDot\be\vow_\BeDefault.cs" />
+    <Compile Include="_address\_route\NewFolder1\DivisionA1 - Copy.cs" />
+    <Compile Include="_address\_route\division\Denotes - Copy.cs" />
+    <Compile Include="_address\_route\division\Re - Copy.cs" />
+    <Compile Include="_address\_route\division\re_\Joint.cs" />
+    <Compile Include="_address\_route\division_\div\Denotes - Copy.cs" />
+    <Compile Include="_address\_route\division_\div\Dnts.cs" />
+    <Compile Include="_address_\NewFolder1\RouteI.cs" />
+    <Compile Include="_disk\IPartition.cs" />
+    <Compile Include="_disk\_part\IPartition.cs" />
+    <Compile Include="_disk\_part\vol_\xpN_\DiscFullException.cs" />
+    <Compile Include="_disk\_part\vol_\xpN_\IDiscFull.cs" />
+    <Compile Include="_disk\_part\vol_\xpN_\_DiscFullX.cs" />
+    <Compile Include="_file\blob_\txt_\lines\AsSeq.cs" />
+    <Compile Include="_file\blob_\zip\of_\destinations_\Considered.cs" />
+    <Compile Include="_file\blob_\zip\of_\destinations_\NewFolder1\Accounted.cs" />
+    <Compile Include="_file\blob_\zip\of_\destinations_\NewFolder1\Unignored.cs" />
+    <Compile Include="_file\blob_\zip\of_\destinations_\Unignored.cs" />
+    <Compile Include="_file\blob_\zip\of_\documents_\Unignored.cs" />
+    <Compile Include="_file\blob_\zip\of_\documents_\unignored\containerAsMain0doc\TmpChild.cs" />
+    <Compile Include="_file\blob_\zip\of_\documents_\unignored\FolderNomAsMain.cs" />
+    <Compile Include="_file\blob_\zip\of_\destinations_\FolderDestinations.cs" />
+    <Compile Include="_file\blob_\zip\of_\LocationNulS.cs" />
+    <Compile Include="_file\blob_\zip\of_\locationNulS\ToTmp.cs" />
+    <Compile Include="_file\blob_\zip\_Decompress.cs" />
+    <Compile Include="address_\spear\be_\Rar.cs" />
+    <Compile Include="address_\spear\be_\rar\Vow.cs" />
+    <Compile Include="address_\spear\be_\rar\vow\Ee.cs" />
+    <Compile Include="address_\spear_\exT_\Rar.cs" />
+    <Compile Include="address_\spear_\newable_\ext_\Zip.cs" />
+    <Compile Include="file\be_\exT_\exT_\Rar.cs" />
+    <Compile Include="file\be_\exT_\exT_\rar\Vow.cs" />
+    <Compile Include="file\be_\exT_\exT_\rar\vow\Ee.cs" />
+    <Compile Include="file\be_\exT_\exT_\SevenZee.cs" />
+    <Compile Include="file\be_\exT_\exT_\sevenZee\Vow.cs" />
+    <Compile Include="file\be_\exT_\exT_\sevenZee\vow\Ee.cs" />
+    <Compile Include="file\be_\exT_\exT_\Zip.cs" />
+    <Compile Include="file\be_\exT_\exT_\zip\Vow.cs" />
+    <Compile Include="file\be_\exT_\exT_\zip\vow\Ee.cs" />
+    <Compile Include="file_\ext_\Rar.cs" />
+    <Compile Include="file_\ext_\SevenZee.cs" />
+    <Compile Include="file_\ext_\Zip.cs" />
+    <Compile Include="Paths.cs" />
+    <Compile Include="path\nulable\Parse.cs" />
+    <Compile Include="path_\contextual_\ILiteral.cs" />
+    <Compile Include="path_\contextual_\rted_\xpn_\AboveRt.cs" />
+    <Compile Include="path_\full_\xpn_\AboveRt.cs" />
+    <Compile Include="path_\ILiteral.cs" />
+    <Compile Include="path_\xpn_\Parse.cs" />
+    <Compile Include="_address\RouteI1.cs" />
+    <Compile Include="_address\RouteI.cs" />
+    <Compile Include="_address\route_\SprigI0.cs" />
+    <Compile Include="_address\_route\division_\denotation\Regressions.cs" />
+    <Compile Include="_address\_route\division_\denotation_\~\Denotation - Copy.cs" />
+    <Compile Include="_address\_route\division_\denotation_\~\DenotationI - Copy.cs" />
+    <Compile Include="_address\_route\division_\div\Regressions.cs" />
+    <Compile Include="_address\_route\division_\_dnted_\NewFolder1\Dnt.cs" />
+    <Compile Include="_address\_route\division_\div_\NewFolder1\DirectoryI.cs" />
+    <Compile Include="_address\_route\division_\NewFolder1\DestinationI.cs" />
+    <Compile Include="_address\_route\division_\NewFolder1\Div2.cs" />
+    <Compile Include="_address\_route\division_\NewFolder1\DivI2.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\Regressions.cs" />
+    <Compile Include="_address\_route\division_\_div\DstI4.cs" />
+    <Compile Include="_address\_route\division_\_div\NewFolder1\Dir2.cs" />
+    <Compile Include="_address\_route\division_\_div\NewFolder1\DirI2.cs" />
+    <Compile Include="_address\_route\division_\_div\NewFolder1\DstA.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnts\Spliced - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\be_\exT_\SevenZee.cs" />
+    <Compile Include="nilnul0\txt\be_\fS_\EndWithNonSep.cs" />
+    <Compile Include="nilnul0\txt\be_\fS_\sepBegin\Vow.cs" />
+    <Compile Include="path\BeI.cs" />
+    <Compile Include="path\be\Vow.cs" />
+    <Compile Include="path\be\vow_\BeDefault.cs" />
+    <Compile Include="path\be_\DntAtEnd.cs" />
+    <Compile Include="path\be_\dntEnd\Vow.cs" />
+    <Compile Include="path\be_\dntEnd\vow\Ee.cs" />
+    <Compile Include="path\co_\shieldDivision\RouteX.cs" />
+    <Compile Include="path\co_\spearPart\MergeX.cs" />
+    <Compile Include="path\Parse.cs" />
+    <Compile Include="path\Vow.cs" />
+    <Compile Include="path\vow\Ee.cs" />
+    <Compile Include="path\vow\ee_\VowDefault.cs" />
+    <Compile Include="path_\contextual_\IRted.cs" />
+    <Compile Include="path_\contextual_\_route\Division.cs" />
+    <Compile Include="path_\contextual_\_route\_division_\ToLiteral.cs" />
+    <Compile Include="path_\contextual_\_route\division\BeI.cs" />
+    <Compile Include="path_\contextual_\_route\division\be_\Div.cs" />
+    <Compile Include="path_\contextual_\_route\division\be_\DntAtEnd.cs" />
+    <Compile Include="path_\contextual_\_route\division\co_\DivDenotation.cs" />
+    <Compile Include="path_\contextual_\_route\division\co_\DivDivision.cs" />
+    <Compile Include="path_\contextual_\_route\division\ToDenotation.cs" />
+    <Compile Include="path_\contextual_\_route\division\~\Parse.cs" />
+    <Compile Include="path_\contextual_\_route\division\Parse.cs" />
+    <Compile Include="path_\contextual_\_route\division_\div\Co.cs" />
+    <Compile Include="path_\contextual_\_route\division_\div\StepAppended.cs" />
+    <Compile Include="path_\contextual_\_route\division_\div\dnt\SuffixedsDoc.cs" />
+    <Compile Include="path_\contextual_\_route\division_\div~\Suffixeds.cs" />
+    <Compile Include="path_\contextual_\_route\division_\_div\deckeds~\Suffixed.cs" />
+    <Compile Include="path_\contextual_\_route\division_\_div\_dir\steps\Shrink.cs" />
+    <Compile Include="path_\contextual_\_route\division_\_div\_dir\steps~\Steps.cs" />
+    <Compile Include="path_\Full.cs" />
+    <Compile Include="path_\contextual_\_route\division\PrependVol.cs" />
+    <Compile Include="address\nulable\_ParseX.cs" />
+    <Compile Include="address\of_\EnvVarEd.cs" />
+    <Compile Include="address\op_\UnaryI.cs" />
+    <Compile Include="address\op_\unary_\Parent.cs" />
+    <Compile Include="address\op_\unary_\Up.cs" />
+    <Compile Include="address\prefixed_\overlong_\PrependIfNeed.cs" />
+    <Compile Include="address\phrase_\QuoteIfHasSpaceOrTab.cs" />
+    <Compile Include="address\ReI.cs" />
+    <Compile Include="address\re\Inverse%28T.cs" />
+    <Compile Include="address\re_\Disjoint1.cs" />
+    <Compile Include="address\re_\equiv_\SameVol.cs" />
+    <Compile Include="address\re_\sup_\EndImportant.cs" />
+    <Compile Include="address\re_\sub_\EndImportant.cs" />
+    <Compile Include="address\re_\SubProp.cs" />
+    <Compile Include="address\re_\Sub1.cs" />
+    <Compile Include="address\re_\Sup1.cs" />
+    <Compile Include="address\str\_PhraseX.cs" />
+    <Compile Include="address\str_\seq\BeI.cs" />
+    <Compile Include="address\str_\seq\be_\Disjoint1.cs" />
+    <Compile Include="address\to_\_SpearX.cs" />
+    <Compile Include="address\prefixed_\Url.cs" />
+    <Compile Include="address\VodI.cs" />
+    <Compile Include="address\VowI.cs" />
+    <Compile Include="address\vow\Ee.cs" />
+    <Compile Include="address\vow\ee_\VowDefault.cs" />
+    <Compile Include="address\vow\NewFolder1\En.cs" />
+    <Compile Include="address\be_\shield\Vow1.cs" />
+    <Compile Include="address\be_\shield\vow\Ee.cs" />
+    <Compile Include="address\be_\location\Vow.cs" />
+    <Compile Include="address\be_\shield\Anto.cs" />
+    <Compile Include="address\be_\file\Vow.cs" />
+    <Compile Include="address\be_\File.cs" />
+    <Compile Include="address\be_\folder\Vow.cs" />
+    <Compile Include="address\co\relevate_\Route.cs" />
+    <Compile Include="address\co\relevate_\RouteI.cs" />
+    <Compile Include="address_\Occupied.cs" />
+    <Compile Include="address_\occupied\Meaning.cs" />
+    <Compile Include="address_\shield\be_\newable\Anto.cs" />
+    <Compile Include="address_\shield_\my_\Personal.cs" />
+    <Compile Include="address_\shield_\My.cs" />
+    <Compile Include="address_\shield_\Root.cs" />
+    <Compile Include="address_\spear\nulable\Container.cs" />
+    <Compile Include="address_\spear\nulable\parse_\Nul4xpn.cs" />
+    <Compile Include="Path.cs" />
+    <Compile Include="path\co_\spearPath\Merge.cs" />
+    <Compile Include="file\be\Vow - 复制.cs" />
+    <Compile Include="file\be\vow_\BeDefault.cs" />
+    <Compile Include="file\be_\ext\Vow - 复制.cs" />
+    <Compile Include="file\be_\ext\vow\En.cs" />
+    <Compile Include="file\Blob.cs" />
+    <Compile Include="file\vow\ee_\VowDefault.cs" />
+    <Compile Include="file\vow\En - 复制.cs" />
+    <Compile Include="file_\shortcut\create_\ClsId.cs" />
+    <Compile Include="file_\shortcut\Vw.cs" />
+    <Compile Include="file_\shortcut\vw_\ByWshShell.cs" />
+    <Compile Include="folder\be_\link_\sym\Anto.cs" />
+    <Compile Include="folder\Boxed_pub.cs" />
+    <Compile Include="folder\Boxed.cs" />
+    <Compile Include="folder\directories_\NoDotLed.cs" />
+    <Compile Include="folder\dir_\Obsolete.cs" />
+    <Compile Include="folder\dir_\unoccupied_\link_\sym\create_\TargetShortcut.cs" />
+    <Compile Include="folder\dir_\Vered.cs" />
+    <Compile Include="folder\divs_\Self0NoDotLed.cs" />
+    <Compile Include="location\attr_\time\SetLastWriteTime.cs" />
+    <Compile Include="location\Blob.cs" />
+    <Compile Include="location\Destinies.cs" />
+    <Compile Include="path_\full\BeI.cs" />
+    <Compile Include="path_\full\be_\DntAtEnd.cs" />
+    <Compile Include="path_\IContextual.cs" />
+    <Compile Include="path_\contextual_\_route\division_\_div\_dir\step_\Ups.cs" />
+    <Compile Include="path_\contextual_\_route\division_\_div\_dir\step_\~\NewFolder1\route_\NewFolder2\Self.cs" />
+    <Compile Include="path_\contextual_\_route\division_\_div\_dir\step_\~\Up.cs" />
+    <Compile Include="path_\contextual_\_route\division_\_div\_dir\step~\StepI.cs" />
+    <Compile Include="path_\contextual_\Rted.cs" />
+    <Compile Include="path_\contextual_\rted\BeI.cs" />
+    <Compile Include="path_\contextual_\rted\be_\Stem.cs" />
+    <Compile Include="path_\contextual_\rted\be_\DntAtEnd.cs" />
+    <Compile Include="_address\_route\division_\denotation_\Dnted.cs" />
+    <Compile Include="_address\_route\division_\denotation\co\RelPath - Copy %282%29.cs" />
+    <Compile Include="_address\_route\division_\denotation\OfDocument.cs" />
+    <Compile Include="_address\_route\division\co\Shared1.cs" />
+    <Compile Include="path_\contextual_\_route\division_\_div\_dir\step_\~\Forward.cs" />
+    <Compile Include="path_\contextual_\_route\division_\div\NewFolder1\DntAppended.cs" />
+    <Compile Include="path_\contextual_\_route\division_\_div\Dir.cs" />
+    <Compile Include="path_\contextual_\_route\division_\Div.cs" />
+    <Compile Include="path_\contextual_\_route\division_\_div\_dir\step_\Up.cs" />
+    <Compile Include="path_\contextual_\_route\division_\_div\_dir\step_\~\Parent.cs" />
+    <Compile Include="path_\contextual_\_route\division_\_div\_dir\step_\~\Parents.cs" />
+    <Compile Include="address\co_\FolderDocument.cs" />
+    <Compile Include="address\co_\shieldSpear_\containing\_DifX.cs" />
+    <Compile Include="address\Eq.cs" />
+    <Compile Include="address\eq\Neq.cs" />
+    <Compile Include="address\prefixed_\Overlong.cs" />
+    <Compile Include="address\op_\unary_\RemoveRedundantTrailingSlash.cs" />
+    <Compile Include="address\vow_\location\Ed.cs" />
+    <Compile Include="address\ExploreX.cs" />
+    <Compile Include="address\_LocalNameX.cs" />
+    <Compile Include="address\_parse\_CheckX.cs" />
+    <Compile Include="address_\based_\NewFolder1\BaseDst.cs" />
+    <Compile Include="address_\based_\BaseDivision.cs" />
+    <Compile Include="address_\folderable\Ensure.cs" />
+    <Compile Include="address_\Shield0Spear.cs" />
+    <Compile Include="address_\shields\be\Vow1 - Copy.cs" />
+    <Compile Include="address_\shields\be\vow_\BeDefault.cs" />
+    <Compile Include="address_\shields\be_\disjoint\vow\EeOfSeq.cs" />
+    <Compile Include="address_\shields\divisions\find\_LogX - Copy.cs" />
+    <Compile Include="address_\shields\divisions\find\_LogX.cs" />
+    <Compile Include="address_\shields\vow\EeOfSeq.cs" />
+    <Compile Include="address_\shields\vow\ee_\VowDefault.cs" />
+    <Compile Include="address_\shields_\AddressNulableSX.cs" />
+    <Compile Include="address_\shields_\Disjoint1 - Copy.cs" />
+    <Compile Include="address_\shields_\disjoint_\AddressNulableSX.cs" />
+    <Compile Include="address_\shield\be\NewFolder1\Vow - Copy.cs" />
+    <Compile Include="address_\shield\be\vow_\BeDefault.cs" />
+    <Compile Include="address_\shield\be_\ensurable\Vow.cs" />
+    <Compile Include="address_\shield\be_\ensurable\vow\En.cs" />
+    <Compile Include="address_\shield\be_\folder_\Empty.cs" />
+    <Compile Include="address_\shield\be_\Newable0EmptyFolder.cs" />
+    <Compile Include="address_\shield\be_\_FolderX_prefix.cs" />
+    <Compile Include="address_\shield\be_\Folder_splitOverlong.cs" />
+    <Compile Include="address_\shield\be_\folder\Anto.cs" />
+    <Compile Include="address_\shield\op_\ConvertI.cs" />
+    <Compile Include="address_\shield\co\Path.cs" />
+    <Compile Include="address_\shield\co\SharedStub.cs" />
+    <Compile Include="address_\shield\eq\Ne.cs" />
+    <Compile Include="address_\shield\op_\unary_\Parent.cs" />
+    <Compile Include="address_\shield\re\Converse.cs" />
+    <Compile Include="address_\shield\re_\SupProp.cs" />
+    <Compile Include="address_\shield\re_\SubProp.cs" />
+    <Compile Include="address_\shield\SortieI.cs" />
+    <Compile Include="address_\shield\sortie_\Lst.cs" />
+    <Compile Include="address_\shields_\StrI.cs" />
+    <Compile Include="address_\shield\to_\_SpearX.cs" />
+    <Compile Include="address_\shield\CollectionI.cs" />
+    <Compile Include="address_\shield\collection\op_\binary_\_dif\Ret.cs" />
+    <Compile Include="address_\shield\collection\op_\BinaryI.cs" />
+    <Compile Include="address_\shield\collection\op_\binary_\Dif.cs" />
+    <Compile Include="address_\shield\collection_\Set.cs" />
+    <Compile Include="address_\shield\collection_\Cover.cs" />
+    <Compile Include="address_\shield\collection_\cover\aggregate_\_union\_ret\Contain.cs" />
+    <Compile Include="address_\shield\collection_\cover\aggregate_\_union\Ret.cs" />
+    <Compile Include="address_\shield\collection_\_cover_\Contain.cs" />
+    <Compile Include="address_\shield\Eq.cs" />
+    <Compile Include="address_\shield\EqX.cs" />
+    <Compile Include="address_\shield\nulable_\AddressNulableX.cs" />
+    <Compile Include="address_\shield\seq_\Addresses.cs" />
+    <Compile Include="address_\shield\set\op_\BinaryI.cs" />
+    <Compile Include="address_\shield\set\op_\binary_\Dif.cs" />
+    <Compile Include="address_\shield\sups_\Existed.cs" />
+    <Compile Include="address_\shield\sups_\existed\NearestFolder.cs" />
+    <Compile Include="address_\shield\vow\ee_\VowDefault.cs" />
+    <Compile Include="address_\shield\vow\NewFolder1\En - Copy.cs" />
+    <Compile Include="address_\shield\_PhraseX.cs" />
+    <Compile Include="address_\shield\_SupsX.cs" />
+    <Compile Include="address_\shield_\Ensurable.cs" />
+    <Compile Include="address_\shield_\folderable_\Newable0empty.cs" />
+    <Compile Include="address_\shield_\nonrt\_ParentX.cs" />
+    <Compile Include="address_\shield_\notOverlong\be_\Folder.cs" />
+    <Compile Include="address_\shield_\root\be_\_ExistX.cs" />
+    <Compile Include="address_\shield\op_\of_\Spear.cs" />
+    <Compile Include="address_\spear\be\En.cs" />
+    <Compile Include="address_\spear\be\en_\BeDefaulted.cs" />
+    <Compile Include="address_\spear\be\Vow - Copy.cs" />
+    <Compile Include="address_\spear\be\vow_\NewFolder1\BeDefault.cs" />
+    <Compile Include="address_\spear\be_\Exts.cs" />
+    <Compile Include="address_\spear\be_\Exist_pinvoke.cs" />
+    <Compile Include="address_\spear\be_\ext\Vow.cs" />
+    <Compile Include="address_\spear\be_\_file\File_notConsiderOverlong.cs" />
+    <Compile Include="address_\spear\be_\_file\ParentDenote.cs" />
+    <Compile Include="address_\spear\be_\_file\File_splitOverlong.cs" />
+    <Compile Include="address_\spear\co\Path.cs" />
+    <Compile Include="address_\spear\ext\be_\_DottedWithGeOneCharsX.cs" />
+    <Compile Include="address_\spear\ext_\_DocExtX.cs" />
+    <Compile Include="address_\spear\nulable\ov_\_ShieldX.cs" />
+    <Compile Include="address_\spear\op_\unary_\EnsureDweltExt.cs" />
+    <Compile Include="address_\spear\re_\equiv_\SameVol.cs" />
+    <Compile Include="address_\spear\vow_\_occupied\Xpn.cs" />
+    <Compile Include="address_\spear\_parse\_CheckX.cs" />
+    <Compile Include="address_\spear_\File.cs" />
+    <Compile Include="address_\shield\op_\unary_\NewFolder1\UpN.cs" />
+    <Compile Include="address_\spear_\newable_\Ext.cs" />
+    <Compile Include="address_\spear_\shieldDoc\Main.cs" />
+    <Compile Include="path~\Shortcut.cs" />
+    <Compile Include="_file\blob_\_ZipX.cs" />
+    <Compile Include="Disks.cs" />
+    <Compile Include="File0FolderX.cs" />
+    <Compile Include="file0Folder\CheckThrow.cs" />
+    <Compile Include="file0Folder_\Info.cs" />
+    <Compile Include="files\dedup_\asSym_\_TraceSrcX.cs" />
+    <Compile Include="files\dedup_\_TraceSrcX.cs" />
+    <Compile Include="files\mains\Ordinize.cs" />
+    <Compile Include="files\_DelDupX.cs" />
+    <Compile Include="files\_explore\_ExploreX.cs" />
+    <Compile Include="file\attr_\AccessTime.cs" />
+    <Compile Include="file\attr_\CreateTime.cs" />
+    <Compile Include="file\attr_\WriteTime.cs" />
+    <Compile Include="file\be\En - Copy.cs" />
+    <Compile Include="file\be\En.cs" />
+    <Compile Include="file\be\en_\BeDefaulted.cs" />
+    <Compile Include="file\be\Vow - Copy.cs" />
+    <Compile Include="file\be\Vow.cs" />
+    <Compile Include="address_\spear_\unoccupied\Create4TxtWrite.cs" />
+    <Compile Include="file\be_\ActiveInPeriod.cs" />
+    <Compile Include="file\be_\Exts.cs" />
+    <Compile Include="file\be_\exts_\Docx.cs" />
+    <Compile Include="file\be_\link_\SymW.cs" />
+    <Compile Include="file\blob\writer_\Ensure2Append.cs" />
+    <Compile Include="file\blob_\txt_\lines\AsSeq.cs" />
+    <Compile Include="file\drop_\Recyclable - Copy.cs" />
+    <Compile Include="file\dup_\link_\hard_\newMain\Noted.cs" />
+    <Compile Include="file\dup_\link_\hard_\_NewMain.cs" />
+    <Compile Include="file\dup_\link_\hard_\_IntoX.cs" />
+    <Compile Include="file\doc\rename\EnsureExt.cs" />
+    <Compile Include="file\doc\rename\ensureExt_\RetParentDoc.cs" />
+    <Compile Include="file\dup_\link_\sym_\_NewMain.cs" />
+    <Compile Include="file\dup_\NewMain.cs" />
+    <Compile Include="file\eq_\binary\Re.cs" />
+    <Compile Include="file\eq_\EqAddress.cs" />
+    <Compile Include="file\explore_\Select.cs" />
+    <Compile Include="file\doc\Rename.cs" />
+    <Compile Include="file\vow\En - Copy.cs" />
+    <Compile Include="file\vow\Ee1.cs" />
+    <Compile Include="file_\Based.cs" />
+    <Compile Include="file_\link_\_SymX.cs" />
+    <Compile Include="file_\link_\sym\ToHard.cs" />
+    <Compile Include="file_\nonlinks\deDup_\traceSrc_\_TraceSrcX.cs" />
+    <Compile Include="file_\nonlinks\deDup_\_TraceSrcX.cs" />
+    <Compile Include="file_\nonlinks\_DelDupX.cs" />
+    <Compile Include="file_\ext_\rar\decompress_\_RarX.cs" />
+    <Compile Include="file_\shortcut_\relative_\explorer\prog_\Explorer.cs" />
+    <Compile Include="file_\_TmpX.cs" />
+    <Compile Include="folders\be\Vow - Copy.cs" />
+    <Compile Include="folders\be\vow_\VowDefault.cs" />
+    <Compile Include="folders\be_\disjoint\VowOfSeq.cs" />
+    <Compile Include="folders\be_\disjoint\vow\EeOfSeq.cs" />
+    <Compile Include="folders\divisions\find\Log - Copy.cs" />
+    <Compile Include="folders\divisions\find\Log.cs" />
+    <Compile Include="folders\documents\Filter.cs" />
+    <Compile Include="folders\vow\EeOfSeq.cs" />
+    <Compile Include="folders\vow\ee_\VowDefault.cs" />
+    <Compile Include="folders_\Disjoint - Copy.cs" />
+    <Compile Include="folders_\DisjointOfSeq.cs" />
+    <Compile Include="folder\be\Anto - Copy.cs" />
+    <Compile Include="folder\be\Vow2 - Copy %282%29.cs" />
+    <Compile Include="folder\be\Vow2 - Copy.cs" />
+    <Compile Include="folder\be\anto_\BeDefault.cs" />
+    <Compile Include="folder\be\vow_\BeDefault.cs" />
+    <Compile Include="folder\be_\empty\Vow.cs" />
+    <Compile Include="folder\be_\empty\vow\En.cs" />
+    <Compile Include="address_\shield\be_\newable0empty\Vow.cs" />
+    <Compile Include="address_\shield\be_\newable0empty\vow\En.cs" />
+    <Compile Include="folder\be_\link_\sym_\ThisSym.cs" />
+    <Compile Include="folder\be_\link_\Symlink - Copy.cs" />
+    <Compile Include="folder\be_\link_\sym\Vow.cs" />
+    <Compile Include="folder\be_\link_\sym\vow\Ee.cs" />
+    <Compile Include="folder\co_\disjoint\_delta\Ret.cs" />
+    <Compile Include="folder\co_\disjoint\Delta.cs" />
+    <Compile Include="folder\dnts_\Ignored.cs" />
+    <Compile Include="folder\dnts_\_ignored\SettingsX.cs" />
+    <Compile Include="folder\dnts_\_ignored\Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings1.settings</DependentUpon>
+    </Compile>
+    <Compile Include="folder\dnt_\mainVered_\appendSub_\next.cs" />
+    <Compile Include="folder\dnt_\mainVered_\minVer_\Next.cs" />
+    <Compile Include="folder\dnt_\vered_\newest_\_folder\ensure_\_MaxBeFolderX.cs" />
+    <Compile Include="folder\dnt_\vered_\newest_\_folder\NewFolder1\_EnsureFolderX - Copy.cs" />
+    <Compile Include="folder\dnt_\vered_\newest_\_folder\_EnsureFolderX.cs" />
+    <Compile Include="folder\dnt_\vered_\next_\subIfNeed\_CreateFolderX.cs" />
+    <Compile Include="folder\dnt_\vered_\next_\_SubIfNeedX.cs" />
+    <Compile Include="folder\dnt_\vered_\_NewestX.cs" />
+    <Compile Include="folder\destinations\move_\TgtUnoccupied.cs" />
+    <Compile Include="folder\destinations_\NoIgnored.cs" />
+    <Compile Include="folder\directories_\NoIgnored.cs" />
+    <Compile Include="folder\dirs_\NoIgnored.cs" />
+    <Compile Include="folder\dirs_\nonlink_\NotDotLed.cs" />
+    <Compile Include="folder\dirs_\NotDotLed.cs" />
+    <Compile Include="folder\dirs_\Nonlink_OnParent.cs" />
+    <Compile Include="folder\dir\be_\AnySym.cs" />
+    <Compile Include="folder\divisions_\Unignored.cs" />
+    <Compile Include="folder\divs_\SelfWithSubUnignored.cs" />
+    <Compile Include="folder\docs_\NoIgnored.cs" />
+    <Compile Include="folder\documents_\NoIgnored.cs" />
+    <Compile Include="folder\dsts_\NoIgnored.cs" />
+    <Compile Include="folder\_Destinations.cs" />
+    <Compile Include="folder\destinations\Move.cs" />
+    <Compile Include="folder\destinations\find_\EveryThing.cs" />
+    <Compile Include="folder\destinations\move_\TargetBlank.cs" />
+    <Compile Include="folder\directory\create\Ensure.cs" />
+    <Compile Include="folder\dirs\Move.cs" />
+    <Compile Include="folder\dir\be_\symlink\Anto.cs" />
+    <Compile Include="folder\dir\Move.cs" />
+    <Compile Include="folder\dir\create\Ensure.cs" />
+    <Compile Include="folder\divisions_\NoDotLedFolder.cs" />
+    <Compile Include="folder\docs\deDup_\inSym_\_TraceSrcX.cs" />
+    <Compile Include="folder\docs\deDup_\_TraceSrcX.cs" />
+    <Compile Include="folder\docs\_DeDupX.cs" />
+    <Compile Include="folder\docs\_NoneX.cs" />
+    <Compile Include="folder\docs\_AnyX.cs" />
+    <Compile Include="folder\docs_\_ExtsX.cs" />
+    <Compile Include="folder\documents\dup_\link_\hard_\intoDisjoint_\_NotedX.cs" />
+    <Compile Include="folder\documents\dup_\link_\hard_\_TargetDisjointX.cs" />
+    <Compile Include="folder\documents\dup_\symlink_\_TargetDisjointX.cs" />
+    <Compile Include="folder\documents_\byExt_\_ExtX.cs" />
+    <Compile Include="folder\documents_\ByDirs.cs" />
+    <Compile Include="folder\documents_\_ExtX.cs" />
+    <Compile Include="folder\doc_\unoccupied\create\Writer.cs" />
+    <Compile Include="folder\create\Ensure.cs" />
+    <Compile Include="folder\drop_\Recyclable.cs" />
+    <Compile Include="folder\dsts\Del.cs" />
+    <Compile Include="folder\Move.cs" />
+    <Compile Include="folder\nulable\_ParseX.cs" />
+    <Compile Include="folder\VowI2 - Copy.cs" />
+    <Compile Include="folder\vow\En - Copy.cs" />
+    <Compile Include="folder\_DropX.cs" />
+    <Compile Include="folder\_dir\_EnsureX.cs" />
+    <Compile Include="folder\_dir\_CreateX.cs" />
+    <Compile Include="folder\_LocalNameX.cs" />
+    <Compile Include="Folder_.cs" />
+    <Compile Include="folder_\link_\syms\Be.cs" />
+    <Compile Include="folder_\link_\Sym.cs" />
+    <Compile Include="folder_\link_\sym\Destiny.cs" />
+    <Compile Include="folder_\Newable0Empty.cs" />
+    <Compile Include="folder_\Empty.cs" />
+    <Compile Include="folder_\empty\destinations\Link.cs" />
+    <Compile Include="_address\_route\division_\destination\byDenotation\set\map_\location0nul_\normed_\MapX.cs" />
+    <Compile Include="folder_\empty\Drop.cs" />
+    <Compile Include="address_\shield_\folderable_\newable0empty\destinations\Link.cs" />
+    <Compile Include="folder_\Link.cs" />
+    <Compile Include="folder_\nonlink\coerce_\Tgt.cs" />
+    <Compile Include="folder_\nonlink\dirs_\_NormalX.cs" />
+    <Compile Include="folder_\ParentDivision - Copy.cs" />
+    <Compile Include="folder_\tmp\denote_\mainVered_\subIfNeed\_NextX.cs" />
+    <Compile Include="folder_\tmp\denote_\mainVered_\_NextX.cs" />
+    <Compile Include="folder_\tmp\denote_\vered_\CreateFolder.cs" />
+    <Compile Include="folder_\tmp\denote_\vered_\newest_\_folder\besureFolder_\MaxBeFolder.cs" />
+    <Compile Include="folder_\tmp\denote_\vered_\newest_\_folder\BesureFolder.cs" />
+    <Compile Include="folder_\tmp\denote_\vered_\next_\subIfNeed\CreateFolder.cs" />
+    <Compile Include="folder_\win_\_SystemX.cs" />
+    <Compile Include="folder_\win_\_UsrX.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="LocationA.cs" />
+    <Compile Include="File0FolderI.cs" />
+    <Compile Include="locations\Documents.cs" />
+    <Compile Include="locations\Divisions.cs" />
+    <Compile Include="locations\Find.cs" />
+    <Compile Include="locations\zip_\toFile_\fileSameExt\ToTmp.cs" />
+    <Compile Include="locations\zip_\toFile_\FileSameExt.cs" />
+    <Compile Include="locations_\Disjoint.cs" />
+    <Compile Include="location\be_\File.cs" />
+    <Compile Include="location\be_\Symlink.cs" />
+    <Compile Include="location\Dsts.cs" />
+    <Compile Include="location\Documents.cs" />
+    <Compile Include="location\Divisions.cs" />
+    <Compile Include="location\Drop.cs" />
+    <Compile Include="location\drop_\Recyclable.cs" />
+    <Compile Include="location\nulables\zip_\ToFile.cs" />
+    <Compile Include="location\nulables\zip_\toFile\ToTmp.cs" />
+    <Compile Include="location\nulables\zip_\toFile\toTmp\FilesSameExt.cs" />
+    <Compile Include="location\nulable\be_\File.cs" />
+    <Compile Include="location\SeqI.cs" />
+    <Compile Include="location\seq_\StrI.cs" />
+    <Compile Include="location\_LocalNameX.cs" />
+    <Compile Include="location_\File0Folder.cs" />
+    <Compile Include="location_\File0FolderA.cs" />
+    <Compile Include="location_\file0Folder\BeI.cs" />
+    <Compile Include="location_\file0Folder\be_\File.cs" />
+    <Compile Include="location_\file0Folder\nulable\Parse.cs" />
+    <Compile Include="location_\file0Folder\ParentX.cs" />
+    <Compile Include="location_\file0Folder\_ExploreX.cs" />
+    <Compile Include="location_\file0Folder\_LocalNameX.cs" />
+    <Compile Include="location_\file0Folder\SeqI.cs" />
+    <Compile Include="location_\file0Folder\seq_\StrI.cs" />
+    <Compile Include="location_\file0Folder\str_\Binding.cs" />
+    <Compile Include="location_\file0Folder\str_\_binding\Sortable.cs" />
+    <Compile Include="location_\file0Folder\str_\List.cs" />
+    <Compile Include="location_\file0Folder\str_\ListI.cs" />
+    <Compile Include="folder\dir_\link_\sym\_create\_DllImportX.cs" />
+    <Compile Include="location_\link_\sym\create_\_mklink\OsSetting.cs" />
+    <Compile Include="location_\link_\sym\Tgt.cs" />
+    <Compile Include="location_\link_\sym_\file\_CreateX.cs" />
+    <Compile Include="location_\link_\_sym\_SymX.cs" />
+    <Compile Include="location_\link_\_sym_\SymbolicLink.cs" />
+    <Compile Include="location_\Spear.cs" />
+    <Compile Include="nilnul0\txt\accumulate_\join_\fs_\Path1.cs" />
+    <Compile Include="nilnul0\txt\be_\fS_\BeginWithSep.cs" />
+    <Compile Include="nilnul0\txt\be_\fS_\Folder.cs" />
+    <Compile Include="nilnul0\txt\be_\fS_\address_\Spear.cs" />
+    <Compile Include="nilnul0\txt\op_\unary_\fs_\StripEndSep.cs" />
+    <Compile Include="nilnul0\txt\op_\unary_\fs_\StripBeginSep.cs" />
+    <Compile Include="nilnul0\txt_\fS_\location\_ExploreX.cs" />
+    <Compile Include="_address\_route\division_\denotation_\DivDoc - Copy.cs" />
+    <Compile Include="_address\_route\division_\denotation_\denotesDoc_\DenotesDoc - Copy.cs" />
+    <Compile Include="_address\_route\division_\denotation_\divDenotation_\BaseDocument.cs" />
+    <Compile Include="_address\_route\division_\denotation_\DntedI.cs" />
+    <Compile Include="_address\_route\division_\denotation_\_DivDenotationX.cs" />
+    <Compile Include="_address\_route\division_\div_\directory_\DirDiv.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\Be.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\be\Anto.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\be\anto_\BeDefault.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\be_\DotLed.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\be_\dotLed\Anto.cs" />
+    <Compile Include="_address\_route\division\co\Duct.cs" />
+    <Compile Include="_address\_route\division\co_\denotationDivision\RelPath.cs" />
+    <Compile Include="path_\contextual_\_route\division_\denotation~\Doc - 复制.cs" />
+    <Compile Include="path_\contextual~\Pass.cs" />
+    <Compile Include="_address\_route\division\co_\divDenotation\RelPath.cs" />
+    <Compile Include="_address\_route\division\co_\divDenotation\RelPath - 复制.cs" />
+    <Compile Include="_address\_route\division\Re.cs" />
+    <Compile Include="_address\_route\division\re\converse_\ReDefault.cs" />
+    <Compile Include="_address\_route\division\re_\Sub.cs" />
+    <Compile Include="_address\_route\division\re_\Sup.cs" />
+    <Compile Include="_address\_route\division_\DirDivision.cs" />
+    <Compile Include="path_\contextual_\_route\division_\_div\_dir\step~\StepI - 复制.cs" />
+    <Compile Include="path_\contextual_\_route\division_\_div\_dir\step_\Self.cs" />
+    <Compile Include="_address\_route\division_\div_\notRt\to_\Denotation.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\Regressions.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\%28retiring\Vered.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\%28retiring\_MainExtX%281.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted\NewFolder1\_MainX - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\Ext1.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext\%28retiring\Eq1.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext\Set.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\_nonempty\aftDot\NewFolder1\Be - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\_nonempty\aftDot\_be\cha_\InvalidChas.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\NewFolder1\Main.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\NewFolder1\MainI.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\_ext\txt\be\Vow.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\_ext\txt\be\vow\Vow.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\_ext\txt\op_\Normalize - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\_ext\txt\_BeX - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\_stub\txt\Be - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\_stub\txt\be\Vow - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_vered\Nom.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\DntI - 复制.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\Dnts.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\DntI.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnts\co_\sup\DistanceX1.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnts\co_\sup\_DifX2.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnts\op_\binary_\SharedPrefix1.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnts\re_\Led.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnts\Spliced.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\be_\BeI - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\caption.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\OfDoc.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\of_\txt_\_EscapeByUnderline.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\of_\txt_\_Hyphen4InvalidX.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\of_\txt_\_Underscore4InvalidCharX - Copy.cs" />
+    <Compile Include="_address\_route\division_\destination_\basedDst\_basis\Txt.cs" />
+    <Compile Include="_address\_route\division_\destination_\BasedDst.cs" />
+    <Compile Include="_address\_route\division_\div_\directory\_toDocument\Txt.cs" />
+    <Compile Include="_address\_route\division_\div_\directory_\basedDir\_basis\Txt.cs" />
+    <Compile Include="_address\_route\division_\div_\directory_\DivDir.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\_denote\Txt.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\_froDoc\Txt.cs" />
+    <Compile Include="_address\_route\division\co_\divDivision\_connection\_relation\RelPath.cs" />
+    <Compile Include="_address\_route\division_\div\op_\of_\FroDivisionX2.cs" />
+    <Compile Include="_address\_route\division_\denotation\_div\Txt.cs" />
+    <Compile Include="_address\_route\division_\denotation\DivDnt.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\parse_\Parse - 复制.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted\op_\unary_\EnsureNonempty.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted\op_\unary_\ChangeMain.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted\NewFolder1\_ExtX1 - Copy.cs" />
+    <Compile Include="_address\_route\division_\destinations_\Compatible.cs" />
+    <Compile Include="_address\_route\division_\destination\Dict.cs" />
+    <Compile Include="_address\_route\division_\destination\byDenotation\set\KeyEqAsDenote.cs" />
+    <Compile Include="_address\_route\division_\destination\Eq.cs" />
+    <Compile Include="_address\_route\division_\destination\eq_\NewFolder1\Location.cs" />
+    <Compile Include="_address\_route\division_\destination\set_\Compatible.cs" />
+    <Compile Include="_address\_route\division_\destination\set_\compatible\onto_\SpearNul.cs" />
+    <Compile Include="_address\_route\division_\destination\set_\compatible\onto_\spearNul\_PacX.cs" />
+    <Compile Include="_address\_route\division_\div_\directory\Eq.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\EqX.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\str\_PhraseX.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\_parse\Be.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\_parse\Check.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\op_\of_\_DstX2.cs" />
+    <Compile Include="_address\_route\division_\divDivision~\Division - Copy.cs" />
+    <Compile Include="path_\contextual_\Division0RouteI.cs" />
+    <Compile Include="_address\_route\division\be\Anto.cs" />
+    <Compile Include="_address\_route\division\be\anto_\BeDefault.cs" />
+    <Compile Include="_address\_route\division\be\Vow.cs" />
+    <Compile Include="_address\_route\division\be\vow_\BeDefault.cs" />
+    <Compile Include="_address\_route\division\be_\div_\Rt.cs" />
+    <Compile Include="_address\_route\division\be_\div_\rt\Anto.cs" />
+    <Compile Include="_address\_route\division\be_\NonRt.cs" />
+    <Compile Include="_address\_route\division\be_\nonRt\Vow.cs" />
+    <Compile Include="_address\_route\division\be_\nonRt\vow\Ee.cs" />
+    <Compile Include="_address\_route\division\Set.cs" />
+    <Compile Include="_address\_route\division\set\co\band_\Except.cs" />
+    <Compile Include="_address\_route\division\set\co\band_\Union.cs" />
+    <Compile Include="_address\_route\division\set\co\band_\Intersect.cs" />
+    <Compile Include="_address\_route\division\set\co\convert_\Delta.cs" />
+    <Compile Include="_address\_route\division\op_\to_\div_\ToDivNul.cs" />
+    <Compile Include="_address\_route\division\Vow.cs" />
+    <Compile Include="_address\_route\division\vow\Ee.cs" />
+    <Compile Include="_address\_route\division\vow\ee_\VowDefault.cs" />
+    <Compile Include="_address\_route\division_\DivDivision.cs" />
+    <Compile Include="_address\_route\division_\destination_\DirDivision.cs" />
+    <Compile Include="_address\_route\division_\NonRt.cs" />
+    <Compile Include="_address\_route\division_\nonrt\Dict.cs" />
+    <Compile Include="_address\_route\division_\nonrt\Eq.cs" />
+    <Compile Include="_address\_route\division_\div\be_\Rt.cs" />
+    <Compile Include="_address\_route\division_\div\co\commonAncestry_\Shared1.cs" />
+    <Compile Include="_address\_route\division\eq_\Location.cs" />
+    <Compile Include="_address\_route\division\op_\UnaryI.cs" />
+    <Compile Include="_address\_route\division\op_\unary_\Shrink.cs" />
+    <Compile Include="_address\_route\division\_parse\Be.cs" />
+    <Compile Include="_address\_route\division\_parse\Check.cs" />
+    <Compile Include="_address\_route\division_\div\child_\Dir.cs" />
+    <Compile Include="_address\_route\division_\div\Dst.cs" />
+    <Compile Include="_address\_route\division_\denotation_\divDenotation_\Document.cs" />
+    <Compile Include="_address\_route\division_\divDivision~\Concat.cs" />
+    <Compile Include="_address\_route\division_\div\phrase_\QuoteIfNeed.cs" />
+    <Compile Include="_address\_route\division_\div\to_\Division.cs" />
+    <Compile Include="_address\_route\division_\div\coerce_\_DocumentX.cs" />
+    <Compile Include="_address\_route\division_\div\To.cs" />
+    <Compile Include="_address\_route\division_\div\to_\division_\Shrink.cs" />
+    <Compile Include="_address\_route\division_\div\_NameX.cs" />
+    <Compile Include="_address\_route\division_\div\_parse\Be.cs" />
+    <Compile Include="_address\_route\division_\div\_parse\Check.cs" />
+    <Compile Include="_address\_route\division_\div_\Denotes.cs" />
+    <Compile Include="_address\_route\division_\div_\denotes\Phrase.cs" />
+    <Compile Include="_address\_route\division_\div_\notRt\ToI.cs" />
+    <Compile Include="_address\_route\division_\denotation\be_\Exts.cs" />
+    <Compile Include="_address\_route\division_\denotation\co\RelPath - Copy.cs" />
+    <Compile Include="_address\_route\division_\denotation\set\NewFolder1\Dict.cs" />
+    <Compile Include="_address\_route\division_\denotation\set\map_\NewFolder1\SpearNul.cs" />
+    <Compile Include="_address\_route\division_\denotation\set\map_\spearNul\_MaterializeBySymbolX.cs" />
+    <Compile Include="_address\_route\division_\denotation\op_\unary_\ChangeMain.cs" />
+    <Compile Include="_address\_route\division_\denotation\Set.cs" />
+    <Compile Include="_address\_route\division_\denotation\_parse\Be.cs" />
+    <Compile Include="_address\_route\division_\denotation\_parse\Check.cs" />
+    <Compile Include="_address\_route\division_\denotation_\denotesDoc_\Denotes.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\dotted\EnsureNonempty.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\Exted.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\Pattern.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\DntI.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\DocI2 - 复制.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\DocIX.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\doc\BeIX.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\be_\be_\Exts - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\be_\Exts.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\doc\Comp.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\eq_\EqX.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\doc\phrase_\QuoteIfHasWhite.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\doc\Set.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext\be\Anto.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext\be\anto_\BeDefault.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext\be_\Empty.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext\be_\empty\Anto.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext\eq\Ne.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext\%28retiring\Set - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\Dwelt.cs" />
+    <Compile Include="_address\_route\division_\_div\NewFolder1\DstI4.cs" />
+    <Compile Include="_address\_route\division_\_div\dst\Denote.cs" />
+    <Compile Include="_address\route\co_\stemSprig\RelPath.cs" />
+    <Compile Include="_address\route\eq_\Location.cs" />
+    <Compile Include="_address\route\re\Converse%28T.cs" />
+    <Compile Include="_address\route\re_\sub_\EndCounts.cs" />
+    <Compile Include="_address\route\re_\SupProp.cs" />
+    <Compile Include="_address\route\re_\SubProp.cs" />
+    <Compile Include="_address\route\re_\sup_\EndCounts.cs" />
+    <Compile Include="_address\route\Rted.cs" />
+    <Compile Include="_address\route\rted_\stem_\RtI.cs" />
+    <Compile Include="_address\route\to_\Division.cs" />
+    <Compile Include="_address\route_\based_\BaseDst.cs" />
+    <Compile Include="_address\route_\Stub.cs" />
+    <Compile Include="_address\route_\sprig\co\RelPath.cs" />
+    <Compile Include="_address\route_\stem\co\RelPath.cs" />
+    <Compile Include="_address\route_\stem\eq\Re.cs" />
+    <Compile Include="_address\route_\stem\op_\binary_\commonAncestry_\SharedStub2.cs" />
+    <Compile Include="_address\route\ReI2.cs" />
+    <Compile Include="_address\route\re_\Disjoint1.cs" />
+    <Compile Include="_address\route\re_\Sub2.cs" />
+    <Compile Include="_address\route\re_\Sup2.cs" />
+    <Compile Include="_address\route_\sprig\_parse\Check.cs" />
+    <Compile Include="_address\route_\stem\Division.cs" />
+    <Compile Include="_address\route_\stem\Dst.cs" />
+    <Compile Include="_address\route_\stem\re_\SupProp.cs" />
+    <Compile Include="_address\route_\stem\re_\PropSub.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\_doc\txt\Be.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\doc\_parse\Check.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted\_StubX.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted\_ExtX1.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\mainVeredS\Next.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_dotted\Ext_herit.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_dotted\ExtI.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_dotted\Ext1.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_dotted\Main.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_dotted\_ext\NoLead.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_dotted\MainI.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_dotted\main_\Vered.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_dotted\main_\_vered\Germ.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_dotted\_ext\_noLead\txt\be_\Valid.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_dotted\_ext\_noLead\txt\be_\valid\Vow.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_dotted\_ext\_noLead\txt\be_\valid\vow\En.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_dotted\_ext\_noLead\txt\be_\_valid\cha\be_\Invalid.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_dotted\_main\txt\Be.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_dotted\_main\txt\be\Vow.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_dotted\_main\txt\be\vow\En.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_noDot\Main.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_noDot\MainI.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_noDot\main_\Vered.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_noDot\main_\_vered\Germ.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_noDot\main_\_vered\GermI.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_noDot\_main\txt\Be.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_noDot\_main\txt\be\Vow.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\NoDot.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\OfExts.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\NewFolder1\Ext_emptyOrLed.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\MainI.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext\%28retiring\Set.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\main\_parse\Check.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\main_\Vered.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\main_\_vered\Germ.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\main_\_vered\GermI.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\_ext\txt\op_\Normalize.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_MainExtX%281.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\_stub\txt\be\Vow.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_ofExts\Main.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_ofExts\_main\txt\be_\Valid.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_ofExts\_main\txt\be_\valid\En.cs" />
+    <Compile Include="_address\_route\division_\_div\Dsts.cs" />
+    <Compile Include="_address\_route\division_\_div\dst\EqX.cs" />
+    <Compile Include="_address\_route\division_\_div\dst\Eq.cs" />
+    <Compile Include="_address\route\op_\UnaryI.cs" />
+    <Compile Include="_address\route\op_\unary_\Shrink.cs" />
+    <Compile Include="_address\route\_parse\Check.cs" />
+    <Compile Include="_address\route_\sprig\be_\Exts.cs" />
+    <Compile Include="_address\route_\stem\to_\_SprigX.cs" />
+    <Compile Include="_address\txt\Address.cs" />
+    <Compile Include="address_\spear\be\Anto.cs" />
+    <Compile Include="address_\spear\be_\file\Anto.cs" />
+    <Compile Include="address_\spear\be_\Folder.cs" />
+    <Compile Include="address_\spear_\file\ForceX.cs" />
+    <Compile Include="address_\spear_\file\Create.cs" />
+    <Compile Include="address_\spear_\file\_EnsureX.cs" />
+    <Compile Include="address_\_location_\BlankIX.cs" />
+    <Compile Include="address\OverLong.cs" />
+    <Compile Include="address_\Shield1.cs" />
+    <Compile Include="address_\ShieldA1.cs" />
+    <Compile Include="address_\ShieldI1.cs" />
+    <Compile Include="address_\Shields1.cs" />
+    <Compile Include="address_\ShieldsI1.cs" />
+    <Compile Include="address_\shieldSpear_\sup\Dif1.cs" />
+    <Compile Include="address_\shields\BeI1.cs" />
+    <Compile Include="address_\shields\be\Vow1.cs" />
+    <Compile Include="address_\shields\be_\SameVol.cs" />
+    <Compile Include="address_\shields\be_\Disjoint1.cs" />
+    <Compile Include="address_\shields\be_\disjoint\Vow1.cs" />
+    <Compile Include="address_\shields\be_\disjoint\vow\En1.cs" />
+    <Compile Include="address_\shields\Cover1.cs" />
+    <Compile Include="address_\shields\SharedStub.cs" />
+    <Compile Include="address_\shields\Vow1.cs" />
+    <Compile Include="address_\shields\vow\En1.cs" />
+    <Compile Include="address_\shields_\Disjoint1.cs" />
+    <Compile Include="address_\shields_\disjoint_\AddressesX1.cs" />
+    <Compile Include="address_\shields_\disjoint_\Lst.cs" />
+    <Compile Include="address_\shield\BeIX.cs" />
+    <Compile Include="address_\shield\be\Anto.cs" />
+    <Compile Include="address_\shield\be\En.cs" />
+    <Compile Include="address_\shield\be\Vow.cs" />
+    <Compile Include="address_\shield\be_\exist\vow\En.cs" />
+    <Compile Include="address_\shield\be_\exist\vow\_en_\Shield1.cs" />
+    <Compile Include="address_\shield\be_\exist\_vow_\Shield - Copy.cs" />
+    <Compile Include="address_\shield\be_\newable\Vow.cs" />
+    <Compile Include="address_\shield\be_\newable\vow\En.cs" />
+    <Compile Include="address_\shield\be_\NotExist.cs" />
+    <Compile Include="address_\shield\be_\nonRt\En.cs" />
+    <Compile Include="address_\shield\be_\Ensurable.cs" />
+    <Compile Include="address_\shield\be_\OccupiedByFile.cs" />
+    <Compile Include="address_\shield\be_\root\Anto.cs" />
+    <Compile Include="address_\shield\be_\Folder.cs" />
+    <Compile Include="address_\shield\be_\_exist_\Shield - Copy.cs" />
+    <Compile Include="address_\shield\co_\sup\Dif1.cs" />
+    <Compile Include="address_\shield\co_\sup\Distance1.cs" />
+    <Compile Include="address_\shield\ReI1.cs" />
+    <Compile Include="address_\shield\re_\Disjoint1.cs" />
+    <Compile Include="address_\shield\re_\equiv_\SameVol.cs" />
+    <Compile Include="address_\shield\re_\Sub1.cs" />
+    <Compile Include="address_\shield\re_\sub\Complement1.cs" />
+    <Compile Include="address_\shield\re_\Sup1.cs" />
+    <Compile Include="address_\shield\Set.cs" />
+    <Compile Include="address_\shield\set\Has.cs" />
+    <Compile Include="address_\shields_\List.cs" />
+    <Compile Include="address_\shield\to_\_InfoX.cs" />
+    <Compile Include="address_\shield\vow\Ee.cs" />
+    <Compile Include="address_\shield\vow\NewFolder1\En%28TContainer,TBe - Copy.cs" />
+    <Compile Include="address_\shield\_be_\BeI%28T - Copy.cs" />
+    <Compile Include="address_\shield\be_\Root.cs" />
+    <Compile Include="address_\shield\be_\Newable.cs" />
+    <Compile Include="address_\shield\be_\exist\Anto.cs" />
+    <Compile Include="address_\shield\re\Complement.cs" />
+    <Compile Include="address_\shield_\based_\div_\DivFroDivision1.cs" />
+    <Compile Include="address_\shield_\based_\div_\divInDivision_\BaseInAddress1.cs" />
+    <Compile Include="address_\shield_\Creatable.cs" />
+    <Compile Include="address_\shield_\Current.cs" />
+    <Compile Include="address_\shield_\Start.cs" />
+    <Compile Include="address_\shield_\Exist1.cs" />
+    <Compile Include="address_\shield_\nonrt\BeI.cs" />
+    <Compile Include="address_\shield_\NonRtI.cs" />
+    <Compile Include="address_\shield_\nonrt\be_\Ensurable.cs" />
+    <Compile Include="address_\shield_\nonrt\be_\Occupied.cs" />
+    <Compile Include="address_\shield_\nonrt\be_\OccupiedByFile.cs" />
+    <Compile Include="address_\shield_\nonrt\be_\Newable.cs" />
+    <Compile Include="address_\shield_\nonrt\cast_\Doc.cs" />
+    <Compile Include="address_\shield_\Personal.cs" />
+    <Compile Include="address_\shield_\Tmp.cs" />
+    <Compile Include="address_\shield_\_exist_\Shield1.cs" />
+    <Compile Include="address_\shield_\_nonRt_\EnI.cs" />
+    <Compile Include="address_\Spear%281.cs" />
+    <Compile Include="address_\SpearA1.cs" />
+    <Compile Include="address_\shield\set\Eq.cs" />
+    <Compile Include="address_\shields\ReI.cs" />
+    <Compile Include="address_\shields\re_\Cover.cs" />
+    <Compile Include="address_\shield\be\_vow_\Shield%28T.cs" />
+    <Compile Include="address_\shield\be\vow\_en_\En%28TContainer,TBe.cs" />
+    <Compile Include="address_\shield\VowI.cs" />
+    <Compile Include="address_\shield\Comparer.cs" />
+    <Compile Include="address_\shield\comp_\Privileged.cs" />
+    <Compile Include="address_\shield\comp_\privileged\re_\Txt.cs" />
+    <Compile Include="address_\shield\comp_\privileged\Re.cs" />
+    <Compile Include="address_\shield\Doc.cs" />
+    <Compile Include="address_\shield\re_\sup\Complement.cs" />
+    <Compile Include="address_\shield\_vow_\Shield.cs" />
+    <Compile Include="address_\shield_\address\Eq.cs" />
+    <Compile Include="address_\shield_\based_\Child.cs" />
+    <Compile Include="address_\shield_\based_\child\BeI.cs" />
+    <Compile Include="address_\shield_\based_\child\be_\Exist.cs" />
+    <Compile Include="address_\shield_\based_\child\be_\exist\Vow.cs" />
+    <Compile Include="address_\shield_\based_\child\be_\exist\vow\En.cs" />
+    <Compile Include="address_\shield_\based_\child_\parentDir_\Exist.cs" />
+    <Compile Include="address_\shield_\based_\BaseDiv.cs" />
+    <Compile Include="address_\shield\op_\of_\Address.cs" />
+    <Compile Include="address_\shield_\VolStem.cs" />
+    <Compile Include="address_\shield_\Vol.cs" />
+    <Compile Include="address_\ISpear.cs" />
+    <Compile Include="address_\spear\%28retiring\BeI1.cs" />
+    <Compile Include="address_\spear\be\vow_\Vow.cs" />
+    <Compile Include="address_\spear\be_\newable\Vow.cs" />
+    <Compile Include="address_\spear\be_\newable\vow\En.cs" />
+    <Compile Include="address_\spear\be_\Ext1.cs" />
+    <Compile Include="address_\spear\be_\Docx.cs" />
+    <Compile Include="address_\spear\be_\Doc.cs" />
+    <Compile Include="address_\spear\be_\file\NewFolder1\Vow.cs" />
+    <Compile Include="address_\spear\be_\file\vow\NewFolder1\En.cs" />
+    <Compile Include="address_\spear\be_\File.cs" />
+    <Compile Include="address_\spear\be_\occupied\Anto.cs" />
+    <Compile Include="address_\spear\be_\Ensurable.cs" />
+    <Compile Include="address_\spear\be_\Occupied.cs" />
+    <Compile Include="address_\spear\be_\Creatable.cs" />
+    <Compile Include="address_\spear\be_\occupied\Vow.cs" />
+    <Compile Include="address_\spear\be_\occupied\vow\En.cs" />
+    <Compile Include="address_\spear\Container.cs" />
+    <Compile Include="address_\spear\Eq.cs" />
+    <Compile Include="address_\spear\VowI.cs" />
+    <Compile Include="address_\spear\vow\En.cs" />
+    <Compile Include="address_\spear\_DocExtX.cs" />
+    <Compile Include="address_\spear\_DocMainX.cs" />
+    <Compile Include="address_\spear\_DocX.cs" />
+    <Compile Include="address_\spear_\Address1.cs" />
+    <Compile Include="address_\spear_\AddressVowed.cs" />
+    <Compile Include="address_\spear_\Occupied.cs" />
+    <Compile Include="address_\spear_\Creatable.cs" />
+    <Compile Include="address_\spear_\based_\_ParentDocumentX.cs" />
+    <Compile Include="address_\spear_\based_\_ParentDocX1.cs" />
+    <Compile Include="address_\shield_\based_\child_\parentDir_\_AddressX.cs" />
+    <Compile Include="address_\_location_\BlankI.cs" />
+    <Compile Include="address_\_shield_\Stem1.cs" />
+    <Compile Include="address_\_spear_\NewFolder1\Sprig.cs" />
+    <Compile Include="address_\_TxtX.cs" />
+    <Compile Include="address_\shield\Document.cs" />
+    <Compile Include="address_\Location.cs" />
+    <Compile Include="FileI1.cs" />
+    <Compile Include="files\zip_\FileAsLocation.cs" />
+    <Compile Include="file\BeX.cs" />
+    <Compile Include="file\BeA.cs" />
+    <Compile Include="file\be_\Ext.cs" />
+    <Compile Include="file\be_\ext\Vow.cs" />
+    <Compile Include="file\be_\exT_\docx\Vow.cs" />
+    <Compile Include="file\be_\exT_\Docx.cs" />
+    <Compile Include="file\be_\exT_\Doc.cs" />
+    <Compile Include="file\be_\exT_\docx\vow\En.cs" />
+    <Compile Include="file\be_\exT_\doc\Vow.cs" />
+    <Compile Include="file\be_\exT_\doc\vow\En.cs" />
+    <Compile Include="file\be_\link_\Hard.cs" />
+    <Compile Include="file\be_\link_\Reparse.cs" />
+    <Compile Include="file\be_\link_\sym_\by_\_ReparseCheck.cs" />
+    <Compile Include="file\be_\Normal.cs" />
+    <Compile Include="file\CompI.cs" />
+    <Compile Include="file\comp_\Modified.cs" />
+    <Compile Include="file\Container.cs" />
+    <Compile Include="file\container\Explore.cs" />
+    <Compile Include="file\dup_\link_\sym_\_TargetFolderX.cs" />
+    <Compile Include="file\drop_\Recyclable.cs" />
+    <Compile Include="file\Eq.cs" />
+    <Compile Include="file\eq_\Bin.cs" />
+    <Compile Include="file\move\softLinkRemain_\_TargetFolderX.cs" />
+    <Compile Include="file\move\_SoftLinkRemainX.cs" />
+    <Compile Include="file\move_\_TargetParentX.cs" />
+    <Compile Include="file\Exe.cs" />
+    <Compile Include="file\ToI.cs" />
+    <Compile Include="file\to_\FileInfo.cs" />
+    <Compile Include="file\VowI.cs" />
+    <Compile Include="file\_DocX.cs" />
+    <Compile Include="file\_ExtX.cs" />
+    <Compile Include="file\_MoveX.cs" />
+    <Compile Include="file\_UnzipX.cs" />
+    <Compile Include="file_\Ext.cs" />
+    <Compile Include="file_\ext_\Doc.cs" />
+    <Compile Include="file_\link_\hard\create_\sameExt\OfLinkAsContainerDivMain.cs" />
+    <Compile Include="file_\link_\Sym.cs" />
+    <Compile Include="file_\link_\sym\create_\docSame_\_TargetFolderX.cs" />
+    <Compile Include="file\dup_\link_\hard_\AsHardLink.cs" />
+    <Compile Include="file_\link_\hard\create_\by_\_MkLinkX.cs" />
+    <Compile Include="file_\link_\hard\_CreateX.cs" />
+    <Compile Include="file_\link_\sym\create_\ExtSame.cs" />
+    <Compile Include="file_\link_\sym\create_\extSame_\ExtSame.cs" />
+    <Compile Include="file_\link_\_HardX.cs" />
+    <Compile Include="file_\shortcut\_CreateX.cs" />
+    <Compile Include="file_\shortcut_\relative_\cmdStart\Create.cs" />
+    <Compile Include="file_\shortcut_\relative_\explorer\Create.cs" />
+    <Compile Include="file_\link_\NewFolder1\Symlink.cs" />
+    <Compile Include="file_\_shortcut\create_\Based.cs" />
+    <Compile Include="file_\_shortcut\create_\InSameFolder.cs" />
+    <Compile Include="file_\_shortcut\_CreateX.cs" />
+    <Compile Include="file_\shortcut_\_url\_CreateX.cs" />
+    <Compile Include="Folder2.cs" />
+    <Compile Include="FolderI%28T.cs" />
+    <Compile Include="FolderI3.cs" />
+    <Compile Include="Folders.cs" />
+    <Compile Include="FoldersI.cs" />
+    <Compile Include="folders\Divisions.cs" />
+    <Compile Include="folders\BeI.cs" />
+    <Compile Include="folders\be\Vow.cs" />
+    <Compile Include="folders\be_\disjoint\Vow.cs" />
+    <Compile Include="folders\be_\disjoint\vow\Ee.cs" />
+    <Compile Include="folders\documents_\FileInfoS.cs" />
+    <Compile Include="folders\Vow.cs" />
+    <Compile Include="folders\vow\Ee.cs" />
+    <Compile Include="folders_\Enumerable.cs" />
+    <Compile Include="folders_\UnLinkX.cs" />
+    <Compile Include="folder\be\Anto.cs" />
+    <Compile Include="folder\be_\HasDocument.cs" />
+    <Compile Include="folder\co_\sup\Dif.cs" />
+    <Compile Include="folder\dnt_\vered_\next\_CreateFolderX.cs" />
+    <Compile Include="folder\dir\op_\unary_\Rename.cs" />
+    <Compile Include="folder\divs_\_EmptyX.cs" />
+    <Compile Include="folder\dnt_\vered_\_NextX.cs" />
+    <Compile Include="folder\docs_\ext\as_\_ExtX.cs" />
+    <Compile Include="folder\docs_\_ExtX.cs" />
+    <Compile Include="folder\Progenitors.cs" />
+    <Compile Include="folder\Ancestors.cs" />
+    <Compile Include="folder\dir\be_\Symlink.cs" />
+    <Compile Include="folder\Directories.cs" />
+    <Compile Include="folder\be\Vow2.cs" />
+    <Compile Include="folder\be_\normal\Vow.cs" />
+    <Compile Include="folder\be_\normal\vow\En.cs" />
+    <Compile Include="folder\dir\BeI.cs" />
+    <Compile Include="folder\dir_\link_\_SymX.cs" />
+    <Compile Include="folder\docs\copy_\symlink_\_TargetFolderX.cs" />
+    <Compile Include="folder\dnt_\Vereds.cs" />
+    <Compile Include="folder\dnt_\Vered.cs" />
+    <Compile Include="folder\dnt_\vered_\Captions.cs" />
+    <Compile Include="folder\Eq.cs" />
+    <Compile Include="folder\Ensure.cs" />
+    <Compile Include="folder\_DirsX.cs" />
+    <Compile Include="folder\dirs\as_\Dirs.cs" />
+    <Compile Include="folder\_DocsX.cs" />
+    <Compile Include="folder\docs_\normal\_DelDuplicate.cs" />
+    <Compile Include="folder\docs_\_NormalX.cs" />
+    <Compile Include="folder\doc_\link\create_\folderAddress_\_SameExtX.cs" />
+    <Compile Include="folder\doc_\link\create_\_FolderAddressX.cs" />
+    <Compile Include="folder\doc_\_LinkX.cs" />
+    <Compile Include="folder\explore_\ByExeSelf.cs" />
+    <Compile Include="folder\VowI2.cs" />
+    <Compile Include="folder\_Divs.cs" />
+    <Compile Include="folder\be_\Normal.cs" />
+    <Compile Include="folder\be_\link_\Symlink.cs" />
+    <Compile Include="folder\dirs_\_NormalX.cs" />
+    <Compile Include="folder\Divisions.cs" />
+    <Compile Include="folder\docs\%28retiring\_DelDuplicate.cs" />
+    <Compile Include="folder\documents\_DelDuplicate.cs" />
+    <Compile Include="folder\ReI.cs" />
+    <Compile Include="folder\re_\sup\Complement.cs" />
+    <Compile Include="folder\re_\Sub.cs" />
+    <Compile Include="folder\re_\sub\Complement.cs" />
+    <Compile Include="folder\re_\Sup.cs" />
+    <Compile Include="folder\op_\ToI.cs" />
+    <Compile Include="folder\to_\_DirInfoX.cs" />
+    <Compile Include="folder\_ParentX.cs" />
+    <Compile Include="folder_\link\_CreateX.cs" />
+    <Compile Include="folder_\nonlink\Eq.cs" />
+    <Compile Include="folder_\nonlink\Set.cs" />
+    <Compile Include="folder_\based_\ParentDir.cs" />
+    <Compile Include="folder_\parentDir\Rename.cs" />
+    <Compile Include="folder_\parentDir\rename_\ByVb.cs" />
+    <Compile Include="folder_\Normal.cs" />
+    <Compile Include="folder_\ParentDivision.cs" />
+    <Compile Include="folder_\Tmp.cs" />
+    <Compile Include="folder_\tmp\dir\CreateDir.cs" />
+    <Compile Include="folder_\tmp\denote_\vered_\next\CreateFolder.cs" />
+    <Compile Include="folder_\tmp\denote_\vered_\next\CreateFile.cs" />
+    <Compile Include="LocationI2.cs" />
+    <Compile Include="locations\zip_\toFile\toTmp\FilesSameExt.cs" />
+    <Compile Include="nilnul0\txts_\fs_\EndWithDirSep.cs" />
+    <Compile Include="nilnul0\txt\nulable\be_\fs_\Address.cs" />
+    <Compile Include="_address\_route\division_\div_\Directory1.cs" />
+    <Compile Include="_address\_route\division_\div_\directory\op_\binary_\Concat.cs" />
+    <Compile Include="_address\_route\division_\div_\directory\op_\BinaryI.cs" />
+    <Compile Include="_address\_route\division_\div_\directory_\_DirX.cs" />
+    <Compile Include="_address\_route\division_\div_\directory\op_\of_\OfDocumentX.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\str_\Seq.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\str_\seq\Started.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\Doc2.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\DocI2.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\BeI2.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\DottedOrNo1.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\%28retiring\MainExt1.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_noDot\txt\be_\valid\En.cs" />
+    <Compile Include="_address\_route\division_\_div\NewFolder1\DstI3.cs" />
+    <Compile Include="_address\vol\_parse\Vol.cs" />
+    <Compile Include="_address\vol_\Sys.cs" />
+    <Compile Include="_address\_route\division_\_dnted_\NewFolder1\DivI2 - 复制.cs" />
+    <Compile Include="_address\_route\division_\_dnted_\NewFolder1\Dnt - Copy.cs" />
+    <Compile Include="_address\_route\division_\_dnted_\NewFolder1\Doc - 复制.cs" />
+    <Compile Include="_address\_route\division_\div_\_directory_\DirsI.cs" />
+    <Compile Include="_address\_route\division_\_dnted_\Dnt.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\NewFolder1\Ext1.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext\Eq1.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\Empty.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\nonempty_\ovAftDot_\OvAftDot.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\_nonempty\aftDot\be_\Pic.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\_nonempty\aftDot\Be.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\_nonempty\aftDot\_be\cha_\NewFolder1\InvalidChas.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\_nonempty\aftDot\be\Vow.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\_ext\txt\Vow.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\_ext\txt\_BeX.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\_stub\txt\Be.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\_doc\txt\_be\word\Be.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\be_\BeI.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\Comp.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\comp_\Comparer.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\of_\txt_\_Underscore4InvalidCharX.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\Extra.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\Parse.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\Set.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\str\Comparer.cs" />
+    <Compile Include="_address\_route\division\Comparer.cs" />
+    <Compile Include="_address\_route\division\Dnts.cs" />
+    <Compile Include="_address\_route\division_\denotation\dnts_\Denotes.cs" />
+    <Compile Include="_address\_route\division_\denotation\Denotes.cs" />
+    <Compile Include="_address\route\Comparer.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\str\Join.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\_parse\Check.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\_parse\scan_\_WordX.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\_parse\scan_\_CharX.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\Vered.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\vered_\Vered - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\vered_\Vered.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_vered\_baseValid\Germ - 复制.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_vered\_baseValid\Germ.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\_dnt\txt\be_\%28retiring\Valid - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\_dnt\txt\be_\valid\%28retiring\Vow.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\_dnt\txt\be_\valid\Vow.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\_dnt\txt\be_\valid\vow\En - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\_dnt\txt\be_\_valid\cha\Be - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\_dnt\txt\be_\_valid\cha\NewFolder1\Be.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\_dnt\txt\be_\_valid\cha_\NewFolder1\Invalids.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\_dnt\txt\be_\_valid\headTip\be_\Valid.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\_dnt\txt\be_\_valid\whole_\InvalidNames.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\_dnt\txt\NewFolder1\Vow - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\_dnt\txt\NewFolder1\Vow - 复制.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\_dnt\txt\Vow.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\_dnt\txt\vow\En - 复制.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\_dnt\txt\vow\En.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\_dnt\txt\_compile\Check.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\_dnt\txt\_compile\_check\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="_address\_route\division_\_div\_dst_\Denote - Copy.cs" />
+    <Compile Include="_address\_route\division_\_div\_dst_\Denote - 复制.cs" />
+    <Compile Include="_address\_route\division_\_div\_dst_\Denote.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\Separator.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\seps_\Started.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\sep\_parse\Check.cs" />
+    <Compile Include="_address\_route\NewFolder1\DivisionI.cs" />
+    <Compile Include="_address\_vol\_disk\DriveI.cs" />
+    <Compile Include="_address_\BlankI.cs" />
+    <Compile Include="folder\Create.cs" />
+    <Compile Include="_file\Ensure.cs" />
+    <Compile Include="_file\Create.cs" />
+    <Compile Include="_folder\_AddressX.cs" />
+    <Compile Include="_folder_\AddressI%28T - Copy.cs" />
+    <Compile Include="_folder_\AddressI3 - Copy.cs" />
+    <Compile Include="_location_\BlankIX.cs" />
+    <Compile Include="locations\zip_\toFile\ToTmp.cs" />
+    <Compile Include="locations\zip_\ToFile.cs" />
+    <Compile Include="locations\zip_\ToMem.cs" />
+    <Compile Include="locations\zip_\toMem\InFile.cs" />
+    <Compile Include="location\categorize_\FileOrFolder.cs" />
+    <Compile Include="location\_ReparseX.cs" />
+    <Compile Include="location_\link_\FolderI.cs" />
+    <Compile Include="location_\link_\FileI.cs" />
+    <Compile Include="location_\link_\file_\HardI.cs" />
+    <Compile Include="location_\link_\ReparseI.cs" />
+    <Compile Include="location_\link_\Sym.cs" />
+    <Compile Include="location_\link_\JunctionI.cs" />
+    <Compile Include="folder_\link_\sym\create_\_DllImportX.cs" />
+    <Compile Include="location_\link_\_SymX.cs" />
+    <Compile Include="location_\link_\sym_\file\create_\ret_\success\_ThroIfFailX.cs" />
+    <Compile Include="location_\link_\sym_\file\create_\ret_\_SuccessX.cs" />
+    <Compile Include="location_\link_\file_\_HardX.cs" />
+    <Compile Include="location_\link_\_JunctionX.cs" />
+    <Compile Include="folder\of_\DirInfo.cs" />
+    <Compile Include="folder\op_\OfI.cs" />
+    <Compile Include="nilnul0\character_\chas_\fs_\DirSep.cs" />
+    <Compile Include="nilnul0\character_\cha\be_\fs_\DirSep.cs" />
+    <Compile Include="nilnul0\character_\cha\set_\fs_\DirSep.cs" />
+    <Compile Include="nilnul0\character_\cha\vow_\fs_\DirSep.cs" />
+    <Compile Include="nilnul0\txt\be_\fS_\Address.cs" />
+    <Compile Include="nilnul0\txt\be_\fS_\endWithDeck\Anto.cs" />
+    <Compile Include="nilnul0\txt\be_\fS_\EndWithDirSep.cs" />
+    <Compile Include="nilnul0\txt\op_\unary_\fs_\EndWithDirSep.cs" />
+    <Compile Include="_address\_route\division_\DestinationIX.cs" />
+    <Compile Include="_address\_route\division_\_div\Dir2.cs" />
+    <Compile Include="_address\_route\division_\_div\DirI2.cs" />
+    <Compile Include="_address\_route\division_\_div\dirs\op_\binary_\SharedPrefix1.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\cast_\Doc.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\Comp.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\Eq2.cs" />
+    <Compile Include="_address\_route\division_\_div\dir\NewFolder1\StrI1.cs" />
+    <Compile Include="_address\_route\division_\Div2.cs" />
+    <Compile Include="_address\_route\division\co_\divDivision\RelPath.cs" />
+    <Compile Include="_address\_route\division_\denotation_\divDocument_\sup\_DifX2.cs" />
+    <Compile Include="_address\_route\division_\DivI2.cs" />
+    <Compile Include="_address\_route\division_\DestinationA.cs" />
+    <Compile Include="_address\_route\DivisionA1.cs" />
+    <Compile Include="_address\_route\division\_NameX.cs" />
+    <Compile Include="_address\_route\division_\_dnted_\DivMain.cs" />
+    <Compile Include="_address\_route\division_\div\BeI1.cs" />
+    <Compile Include="_address\_route\division_\div\be\Anto%28TBe.cs" />
+    <Compile Include="_address\_route\division_\div\be\En.cs" />
+    <Compile Include="_address\_route\division_\div\be_\Empty.cs" />
+    <Compile Include="_address\_route\division_\div\be_\rt\Anto.cs" />
+    <Compile Include="_address\_route\division_\div\be_\nonRt\En.cs" />
+    <Compile Include="_address\_route\division_\div\CoI2.cs" />
+    <Compile Include="_address\_route\division_\div\co\Shared1.cs" />
+    <Compile Include="_address\_route\division_\div\co\Duct.cs" />
+    <Compile Include="path_\contextual_\_route\division_\_div\_dir\Steps.cs" />
+    <Compile Include="path_\contextual_\_route\division_\_div\deckeds~\Ret.cs" />
+    <Compile Include="path_\contextual_\_route\division_\_div\_dir\StepI.cs" />
+    <Compile Include="path_\contextual_\_route\division_\_div\_dir\step_\~\%28steps%29.cs" />
+    <Compile Include="_address\_route\division_\div\co_\sup\DistanceX1.cs" />
+    <Compile Include="_address\_route\division_\div\co_\sup\_DifX2.cs" />
+    <Compile Include="_address\_route\division_\div\Eq2.cs" />
+    <Compile Include="_address\_route\division_\div\op_\binary_\Concat2.cs" />
+    <Compile Include="_address\_route\division_\div\op_\Binary.cs" />
+    <Compile Include="_address\_route\division_\div\op_\of_\froDivision_\_DivisionX2.cs" />
+    <Compile Include="_address\_route\division_\div\op_\of_\_DocumentX1.cs" />
+    <Compile Include="_address\_route\division_\div_\NonEmpty1.cs" />
+    <Compile Include="_address\_route\division_\div_\NonEmptyI.cs" />
+    <Compile Include="_address\_route\division_\div_\notRt\to_\Document.cs" />
+    <Compile Include="_address\_route\division_\div_\Empty.cs" />
+    <Compile Include="_address\_route\division_\div_\_DocX.cs" />
+    <Compile Include="_address\_route\division_\div\Comp.cs" />
+    <Compile Include="_address\_route\division_\denotation_\~\Document3.cs" />
+    <Compile Include="_address\_route\division_\denotation_\~\DocumentI3.cs" />
+    <Compile Include="_address\_route\division_\denotation_\~\DocumentIX.cs" />
+    <Compile Include="_address\_route\division_\denotation\BeI.cs" />
+    <Compile Include="_address\_route\division_\denotation\be_\Ext.cs" />
+    <Compile Include="_address\_route\division_\denotation\be_\ext_\Docx.cs" />
+    <Compile Include="_address\_route\division_\denotation\be_\ext_\Doc.cs" />
+    <Compile Include="_address\_route\division_\denotation\co\RelPath.cs" />
+    <Compile Include="_address\_route\division_\denotation\Eq.cs" />
+    <Compile Include="_address\_route\division_\denotation\phrase_\QuoteIfHasSpaceOrTab.cs" />
+    <Compile Include="_address\_route\division_\denotation\op_\to_\Div1.cs" />
+    <Compile Include="_address\_route\division_\denotation\_NameX.cs" />
+    <Compile Include="_address\_route\division_\denotation_\DntsDoc.cs" />
+    <Compile Include="_address\_route\division_\denotation_\divDenotation_\DenotesDocument.cs" />
+    <Compile Include="_address\_route\division_\denotation_\DivDenotation.cs" />
+    <Compile Include="_address\_route\division_\denotation\_FroDivX.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\be_\be_\ext_\Docx.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\be_\be_\ext_\Doc.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\eq_\Eq3.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\eq\Ne.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\eq\Re.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\doc\to_\Dir.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\dotted0No\_ExtX1.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\Dotted1.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\NoDot1.cs" />
+    <Compile Include="_address\_route\division_\_div\DstA.cs" />
+    <Compile Include="_address\_route\division_\_div\DstsI1.cs" />
+    <Compile Include="_address\_route\division_\_div\dst\SeqI.cs" />
+    <Compile Include="_address\_route\division_\_div\dst\StrI.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\Dnt1.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\SeqI.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\StrI.cs" />
+    <Compile Include="path_\contextual_\denotesCap_\Capped.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\str_\Seq.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\str_\seq\Eq.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\str_\seq\Join.cs" />
+    <Compile Include="_address\_route\division_\_div\dst\Comp.cs" />
+    <Compile Include="_address\RouteA1.cs" />
+    <Compile Include="_address\route\be\vow\EnA.cs" />
+    <Compile Include="_address\route\be_\open\vow\En.cs" />
+    <Compile Include="_address\route\Name.cs" />
+    <Compile Include="_address\route_\Sprig3.cs" />
+    <Compile Include="_address\route_\SprigA1.cs" />
+    <Compile Include="_address\route_\SprigI2.cs" />
+    <Compile Include="_address\route_\sprig\BeI.cs" />
+    <Compile Include="_address\route_\sprig\be_\Ext.cs" />
+    <Compile Include="_address\route_\sprig\be_\ext_\Docx.cs" />
+    <Compile Include="_address\route_\sprig\be_\ext_\Doc.cs" />
+    <Compile Include="_address\route_\sprig\_DocMainX.cs" />
+    <Compile Include="_address\route_\sprig_\RouteVowen.cs" />
+    <Compile Include="_address\route_\sprig_\StemDoc2.cs" />
+    <Compile Include="_address\route_\sprig_\StemDocument.cs" />
+    <Compile Include="_address\route_\sprig_\_RouteX2.cs" />
+    <Compile Include="_address\route_\sprig_\_StemX.cs" />
+    <Compile Include="_address\route_\sprig\Eq.cs" />
+    <Compile Include="_address\route_\sprig\op_\to_\Stem.cs" />
+    <Compile Include="_address\route_\sprig_\_StemDocX.cs" />
+    <Compile Include="_address\route_\sprig_\_StemDocumentX.cs" />
+    <Compile Include="_address\route_\Stem1.cs" />
+    <Compile Include="_address\route_\StemA1.cs" />
+    <Compile Include="_address\route_\StemI1.cs" />
+    <Compile Include="_address\route_\stemSprig\RelPath.cs" />
+    <Compile Include="_address\route_\stemSprig_\sup\_DifX2.cs" />
+    <Compile Include="_address\route_\stems\SharedStub2.cs" />
+    <Compile Include="_address\route_\stem\Be1.cs" />
+    <Compile Include="_address\route_\stem\be\Anto.cs" />
+    <Compile Include="_address\route_\stem\be\En.cs" />
+    <Compile Include="_address\route_\stem\be_\noRt\En.cs" />
+    <Compile Include="_address\route_\stem\be_\Rt.cs" />
+    <Compile Include="_address\route_\stem\be_\rt\Anto.cs" />
+    <Compile Include="_address\route_\stem\op_\binary_\SharedStub2.cs" />
+    <Compile Include="_address\route_\stem\co_\sup\_DifX2.cs" />
+    <Compile Include="_address\route_\stem\co_\sup\_DistanceX1.cs" />
+    <Compile Include="_address\route_\stem\Eq2.cs" />
+    <Compile Include="_address\route_\stem\ReI2.cs" />
+    <Compile Include="_address\route_\stem\re_\Disjoint1.cs" />
+    <Compile Include="_address\route_\stem\re_\Sub2.cs" />
+    <Compile Include="_address\route_\stem\re_\Sup2.cs" />
+    <Compile Include="_address\route_\stem\re_\_Ne.cs" />
+    <Compile Include="_address\route_\stem\re_\_SubX.cs" />
+    <Compile Include="_address\route_\stem_\nonRt\cast_\_SpearX.cs" />
+    <Compile Include="_address\route_\stem_\NoRtI.cs" />
+    <Compile Include="_address\route_\stem\op_\of_\_RouteX2.cs" />
+    <Compile Include="_address\route_\stem\op_\of_\_SprigX1.cs" />
+    <Compile Include="_address\route_\stem\Comparer.cs" />
+    <Compile Include="_address\route_\stem_\Div.cs" />
+    <Compile Include="_address\route_\stem_\division\Eq.cs" />
+    <Compile Include="_address\route_\stem_\based_\ParentDiv.cs" />
+    <Compile Include="_address\route_\stem_\based_\parentDir_\DirByDoc.cs" />
+    <Compile Include="_address\route_\stem_\_DivisionX.cs" />
+    <Compile Include="_address\route_\stem_\Empty.cs" />
+    <Compile Include="_address\route_\stem_\based_\ParentDir.cs" />
+    <Compile Include="_address\vol\be_\Mounted.cs" />
+    <Compile Include="_address\vol\Comparer.cs" />
+    <Compile Include="_address\_route\division_\_dnted_\DivI2.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext\BeI.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext\be_\Ext.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\nonempty_\ovAftDot_\Pdf.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\nonempty_\ovAftDot_\Docx.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\nonempty_\ovAftDot_\Doc.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\Main.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\_dnt\txt\be_\valid\vow\En.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\Eq.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt\_str_\BlankI.cs" />
+    <Compile Include="_address\_route_\Separator.cs" />
+    <Compile Include="_address\_vol_\NameI.cs" />
+    <Compile Include="_address\_vol\_disk\txt\Be.cs" />
+    <Compile Include="_address\_vol\_disk\txt\be\En.cs" />
+    <Compile Include="_address\_vol\_disk\txt\be\en\Comp.cs" />
+    <Compile Include="_file_\BlankI.cs" />
+    <Compile Include="_folder_\BlankI.cs" />
+    <Compile Include="_folder_\AddressI3.cs" />
+    <Compile Include="_folder_\AddressI%28T.cs" />
+    <Compile Include="_location_\BlankI.cs" />
+    <Compile Include="_location_\AddressI2.cs" />
+    <Compile Include="files\Zip.cs" />
+    <Compile Include="file\BeI.cs" />
+    <Compile Include="file\be_\Shortcut.cs" />
+    <Compile Include="file\be_\link_\Sym.cs" />
+    <Compile Include="file\blob\Security.cs" />
+    <Compile Include="file\op_\compress_\SevenZip.cs" />
+    <Compile Include="folders\be_\Disjoint.cs" />
+    <Compile Include="folder\Destinations.cs" />
+    <Compile Include="folder\be_\Mount.cs" />
+    <Compile Include="folder\be_\link_\Junction.cs" />
+    <Compile Include="folder\destinations_\Symlinks.cs" />
+    <Compile Include="folder\division\to_\Division.cs" />
+    <Compile Include="folder\directories_\noDocuments\Del.cs" />
+    <Compile Include="folder\divs_\noDocuments\Del.cs" />
+    <Compile Include="folder\Dsts.cs" />
+    <Compile Include="folder\dsts_\Symlinks.cs" />
+    <Compile Include="folder\dst_\HardLink.cs" />
+    <Compile Include="folder\re_\Disjoint.cs" />
+    <Compile Include="folder\Sub.cs" />
+    <Compile Include="folder_\tmp\CreateLog.cs" />
+    <Compile Include="folder_\tmp\LogAndShow.cs" />
+    <Compile Include="location\BeI.cs" />
+    <Compile Include="location\be_\Reparse.cs" />
+    <Compile Include="file_\binary\Eq.cs" />
+    <Compile Include="folders\Divs.cs" />
+    <Compile Include="folder\dirs\CopyIntoBlank.cs" />
+    <Compile Include="folders\Documents.cs" />
+    <Compile Include="folder\dir\CopyInto.cs" />
+    <Compile Include="folder\divisions\CopyIntoBlank.cs" />
+    <Compile Include="folder\be_\NoDocuments.cs" />
+    <Compile Include="folder\be_\noDocuments\Vow.cs" />
+    <Compile Include="folder\be_\noDocuments\vow\Ed.cs" />
+    <Compile Include="folder\destinations\Duplicate.cs" />
+    <Compile Include="folder\BeI.cs" />
+    <Compile Include="folder\be_\%28retiring\NewFolder1\Empty.cs" />
+    <Compile Include="folder\be_\Dwelled.cs" />
+    <Compile Include="folder\destinations\duplicate_\Vb.cs" />
+    <Compile Include="folder\Directory.cs" />
+    <Compile Include="folder\dir\_CreateX.cs" />
+    <Compile Include="folder\dir_\dst\to_\Dst.cs" />
+    <Compile Include="folder\docs\Zip.cs" />
+    <Compile Include="folder\Document.cs" />
+    <Compile Include="folder\Doc.cs" />
+    <Compile Include="folder\Docs.cs" />
+    <Compile Include="folder\Documents.cs" />
+    <Compile Include="folder\dnt_\MainVered.cs" />
+    <Compile Include="folder\Explorer.cs" />
+    <Compile Include="folder\vow\ee_\En.cs" />
+    <Compile Include="folder_\NoDocument.cs" />
+    <Compile Include="location_\file\Attrs.cs" />
+    <Compile Include="location_\file\attr_\AccessTime.cs" />
+    <Compile Include="location_\file\attr_\WriteTime.cs" />
+    <Compile Include="location_\file\attr_\CreateTime.cs" />
+    <Compile Include="folder\divisions\Glob.cs" />
+    <Compile Include="folder\divisions\SetCreateTime.cs" />
+    <Compile Include="folder\divisions\SetLastAccessTime.cs" />
+    <Compile Include="folder\divisions\SetLastWriteTime.cs" />
+    <Compile Include="folder\attr_\AccessTime.cs" />
+    <Compile Include="folder\attr_\CreateTime.cs" />
+    <Compile Include="folder\attr_\WriteTime.cs" />
+    <Compile Include="folder\be_\dwelt\Anto.cs" />
+    <Compile Include="folder\attr_\SetLastWriteTime.cs" />
+    <Compile Include="nilnul0\txt\be_\fS_\address\exist\Anto.cs" />
+    <Compile Include="nilnul0\txt\be_\fS_\address\Exists.cs" />
+    <Compile Include="logs_\ErrWorkMsg.cs" />
+    <Compile Include="nilnul0\txt\accumulate_\join_\fs_\Path.cs" />
+    <Compile Include="nilnul0\characters_\PathSeperator.cs" />
+    <Compile Include="Address1.cs" />
+    <Compile Include="_addresses_\Seperator.cs" />
+    <Compile Include="_address\_route\division_\_div\dirs\Eq.cs" />
+    <Compile Include="_address\_route\division\Be.cs" />
+    <Compile Include="_address\_route\division\be_\Div.cs" />
+    <Compile Include="_address\_route\division\be_\Document.cs" />
+    <Compile Include="_address\_route\division\Phrase.cs" />
+    <Compile Include="_address\_route\division_\div\ConvertI.cs" />
+    <Compile Include="_address\_route\division_\div\op_\unary_\join_\Dir.cs" />
+    <Compile Include="_address\_route\division_\div\op_\unary_\UpN.cs" />
+    <Compile Include="_address\_route\division_\div\op_\unary_\Up.cs" />
+    <Compile Include="_address\_route\division\Eq.cs" />
+    <Compile Include="_address\_route\division_\div\child_\Doc.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\Deck.cs" />
+    <Compile Include="_address\_route\division_\Destination.cs" />
+    <Compile Include="_address\_route\division_\_div\dirs\CoI.cs" />
+    <Compile Include="_address\_route\division_\_div\dirs\op_\binary_\Concat.cs" />
+    <Compile Include="_address\_route\division\op_\to_\DivisionX.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\dotted\Eq.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\noDot\Eq.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\nonempty_\ovAftDot\Eq.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\main\Eq.cs" />
+    <Compile Include="_address\RouteIX.cs" />
+    <Compile Include="_address\route\Be.cs" />
+    <Compile Include="_address\route\be\VowA.cs" />
+    <Compile Include="_address\route\be\vow\EeA.cs" />
+    <Compile Include="_address\route\be_\Closed.cs" />
+    <Compile Include="_address\route\be_\closed\Vow.cs" />
+    <Compile Include="_address\route\be_\closed\vow\Ee.cs" />
+    <Compile Include="_address\route\be_\Open.cs" />
+    <Compile Include="_address\route\be_\open\Vow.cs" />
+    <Compile Include="_address\route\be_\open\vow\Ee.cs" />
+    <Compile Include="_address\route\Eq.cs" />
+    <Compile Include="_address\route_\stem\op_\ConvertI.cs" />
+    <Compile Include="_address\route_\stem\op_\unary_\join_\Dir.cs" />
+    <Compile Include="_address\route_\stem\op_\unary_\UpN.cs" />
+    <Compile Include="_address\route_\stem\op_\unary_\Up.cs" />
+    <Compile Include="_address\route_\stem\Doc.cs" />
+    <Compile Include="_address\route_\stem\Dir.cs" />
+    <Compile Include="_address\_route\DivisionI.cs" />
+    <Compile Include="_address\_route\division_\div_\DirectoryI.cs" />
+    <Compile Include="_address\_route\division_\_div\DirsI.cs" />
+    <Compile Include="_address\_route\division_\_div\dirs_\Started.cs" />
+    <Compile Include="_address\_route\division_\_div\dirs_\started\Directory.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\nonempty_\ovAftDot\X.cs" />
+    <Compile Include="_address\_route\division_\DestinationI.cs" />
+    <Compile Include="_address\_route\division_\_div\Dirs.cs" />
+    <Compile Include="_address\_route\division_\_div\DstsA.cs" />
+    <Compile Include="_address\_route\division_\_div\dsts_\Started.cs" />
+    <Compile Include="_address\_route\division_\_div\DstX.cs" />
+    <Compile Include="_address\Root.cs" />
+    <Compile Include="_address\IRoute.cs" />
+    <Compile Include="_address\root\Eq.cs" />
+    <Compile Include="_address\route_\stem\op_\unary_\join_\Div.cs" />
+    <Compile Include="_address\Separator.cs" />
+    <Compile Include="_address\Vol.cs" />
+    <Compile Include="_address\vol\Eq.cs" />
+    <Compile Include="_address\_vol\DiskI.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\doc\ext\be_\Img.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\doc\ext\set_\Avi.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\doc\ext\set_\Img.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\doc\ext\set_\Jpg.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\doc\ext\set\Extensions.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\exted_\_dotted\Be.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt_\_noDot\txt\be_\Valid.cs" />
+    <Compile Include="nilnul0\Fs.cs" />
+    <Compile Include="_address\_vol\_disk\PartitionI.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_address\RootI.cs" />
+    <Compile Include="_address\VolI.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\_doc_\ExtI.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\dnt~\_doc_\MainI.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\_dnt\txt\be_\Valid.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\_dnt\txt\be_\_valid\cha_\Invalids.cs" />
+    <Compile Include="_address\_route\division_\_div\_dir\_dnt\txt\be_\_valid\whole_\NewFolder1\InvalidNames.cs" />
+    <Compile Include="_address_\RouteI.cs" />
+    <Compile Include="_address_\VolI.cs" />
+    <Compile Include="_file_\AddressI.cs" />
+    <Compile Include="file_\_link_\FileInfoExtensions.cs" />
+    <Compile Include="location_\link_\_sym_\SymbolicLinkReparseData.cs" />
+    <Compile Include="path~\Anchor.cs" />
+    <Compile Include="_pac_\KeyAsDirecotry4Eq.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="addresses\filtered_\locations\divisions\find_\" />
+    <Folder Include="addresses\_parse\check_\" />
+    <Folder Include="addresses_\folders\" />
+    <Folder Include="addresses_\_disjoint\" />
+    <Folder Include="address\be\op_\binary_\_and\ret_\defaultable_\" />
+    <Folder Include="address\be\_call_\" />
+    <Folder Include="address\co\_route\" />
+    <Folder Include="address\co\_traject\" />
+    <Folder Include="address\co_\addressShield\" />
+    <Folder Include="address\co_\folderFile_\" />
+    <Folder Include="address\NewFolder1\" />
+    <Folder Include="address\prefixed\eq\" />
+    <Folder Include="address\rel_\" />
+    <Folder Include="address\set\" />
+    <Folder Include="address\str_\seq\be_\disjoint\" />
+    <Folder Include="address\url\" />
+    <Folder Include="address_\occupied\_categorize\" />
+    <Folder Include="address_\shields_\str_\" />
+    <Folder Include="address_\shield\be_\new_\" />
+    <Folder Include="address_\shield\coerce_\" />
+    <Folder Include="address_\shield\collection\op_\binary_\dif\" />
+    <Folder Include="address_\shield\collection_\cover\aggregate_\union\ed\" />
+    <Folder Include="address_\shield\collection_\cover\aggregate_\union\ed_\" />
+    <Folder Include="address_\shield\collection_\cover\aggregate_\union\_ed\" />
+    <Folder Include="address_\shield\collection_\cover_\" />
+    <Folder Include="address_\shield\collection_\_cover\" />
+    <Folder Include="address_\shield\denote_\vered_\newest\" />
+    <Folder Include="address_\shield\re_\sub_\" />
+    <Folder Include="address_\shield\set_\" />
+    <Folder Include="address_\shield\vow\_en_\" />
+    <Folder Include="address_\shield_\spear\" />
+    <Folder Include="address_\shield_\_baseDir\" />
+    <Folder Include="address_\shield_\_exist\" />
+    <Folder Include="address_\spear\be_\%28retiring\" />
+    <Folder Include="address_\spear\coerce_\" />
+    <Folder Include="address_\spear\vow_\occupied\" />
+    <Folder Include="address_\spear\_docMain\" />
+    <Folder Include="address_\spear_\based_\desend_\" />
+    <Folder Include="address_\volRoute_\" />
+    <Folder Include="files\explore_\select_\" />
+    <Folder Include="files\mains\ordinize\" />
+    <Folder Include="files_\" />
+    <Folder Include="file\attr_\attr_\" />
+    <Folder Include="file\blob\io\" />
+    <Folder Include="file\dup_\symlink_\" />
+    <Folder Include="file\paste_\" />
+    <Folder Include="file\str\" />
+    <Folder Include="file_\ext_\exT_\" />
+    <Folder Include="file_\ext_\zip_\crypted\" />
+    <Folder Include="file_\link_\hard\create_\by_\mklink_\sameExt\" />
+    <Folder Include="file_\link_\sym\create_\docSame_\linkParent_\" />
+    <Folder Include="file_\link_\sym\create_\srcAddress_\" />
+    <Folder Include="file_\NewFolder1\" />
+    <Folder Include="file_\shortcut_\relative\" />
+    <Folder Include="file_\tmp\" />
+    <Folder Include="folderable\destinations\_link\" />
+    <Folder Include="folders\divs_\unjoint\" />
+    <Folder Include="folders_\unjoint\divs\traverse_\" />
+    <Folder Include="folders_\unjoint\divs_\" />
+    <Folder Include="folders_\unjoint\each\divs_\" />
+    <Folder Include="folders_\unjoint\each\div_\nonrepeats\" />
+    <Folder Include="folders_\_unjoint\" />
+    <Folder Include="folder\be_\be_\" />
+    <Folder Include="folder\cfg\" />
+    <Folder Include="folder\cfg_\nn\" />
+    <Folder Include="folder\co\" />
+    <Folder Include="folder\destinations\dup_\" />
+    <Folder Include="folder\directories_\unjoint\" />
+    <Folder Include="folder\dir\move_\" />
+    <Folder Include="folder\dir_\cfg_\nn_\exted\" />
+    <Folder Include="folder\dir_\cfg_\nn_\exted_\active\div\" />
+    <Folder Include="folder\dir_\vered\dir_\vered\" />
+    <Folder Include="folder\divisions\filtered_\" />
+    <Folder Include="folder\div_\delvable_\" />
+    <Folder Include="folder\dnt_\mainVered\" />
+    <Folder Include="folder\dnt_\vered\" />
+    <Folder Include="folder\dnt_\vered_\newest_\dir\" />
+    <Folder Include="folder\dnt_\vered_\newst\" />
+    <Folder Include="folder\doc_\notLinkS\" />
+    <Folder Include="folder\doc_\unoccupied\create\writer\" />
+    <Folder Include="folder\dsts_\_noIgnored\" />
+    <Folder Include="folder\move_\" />
+    <Folder Include="folder\vow\ee_\link\" />
+    <Folder Include="folder\_cfg\_destination\dnt\" />
+    <Folder Include="folder_\child_\nonlink\dir_\nonlink\be_\" />
+    <Folder Include="folder_\child_\parted\" />
+    <Folder Include="folder_\emptible\" />
+    <Folder Include="folder_\empty\destinations\_link\" />
+    <Folder Include="folder_\links\" />
+    <Folder Include="folder_\links_\" />
+    <Folder Include="folder_\link_\syms\be_\" />
+    <Folder Include="folder_\link_\sym\create_\NewFolder1\" />
+    <Folder Include="folder_\nonlinks_\" />
+    <Folder Include="folder_\nonlink_\" />
+    <Folder Include="folder_\tmp\denote_\vered_\newest\" />
+    <Folder Include="folder_\win_\my\" />
+    <Folder Include="folder_\win_\usr\personal\" />
+    <Folder Include="folder_\xpn_\" />
+    <Folder Include="locations\find\" />
+    <Folder Include="locations\find_\" />
+    <Folder Include="location\str_\" />
+    <Folder Include="location_\file0FolderS\" />
+    <Folder Include="location_\file0Folder\seq_\str\" />
+    <Folder Include="location_\file0Folder_\" />
+    <Folder Include="location_\link_\sym\create_\by_\dllImport_\" />
+    <Folder Include="location_\nonlink_\coerce_\" />
+    <Folder Include="location_\_file\name\be_\" />
+    <Folder Include="nilnul0\character_\cha\set_\fs_\dirSep\" />
+    <Folder Include="nilnul0\txts\ov_\txt_\fs_\" />
+    <Folder Include="path\co\band_\" />
+    <Folder Include="path\co_\spearDivision\" />
+    <Folder Include="path\parse~\" />
+    <Folder Include="path_\contextual_\rted_\tipped_\dntEnded\" />
+    <Folder Include="path_\contextual_\_route\division\coerce_\" />
+    <Folder Include="path_\contextual_\_route\division\co_\divDivision\" />
+    <Folder Include="path_\contextual_\_route\division\drived~\" />
+    <Folder Include="path_\contextual_\_route\division\to_\" />
+    <Folder Include="path_\contextual_\_route\division_\div\tipped_\" />
+    <Folder Include="path_\contextual_\_route\division_\_div\_dir\dnt\" />
+    <Folder Include="path_\contextual_\_route\_division\" />
+    <Folder Include="_address\%28retiring\" />
+    <Folder Include="_address\divDocument\" />
+    <Folder Include="_address\division_\" />
+    <Folder Include="_address\div_\" />
+    <Folder Include="_address\route\co_\sup\" />
+    <Folder Include="_address\route\op_\binary_\" />
+    <Folder Include="_address\route\re\inverse_\" />
+    <Folder Include="_address\route\rted_\sprig\" />
+    <Folder Include="_address\route\rted_\stem\" />
+    <Folder Include="_address\route_\rt\" />
+    <Folder Include="_address\route_\stem\construct_\" />
+    <Folder Include="_address\route_\stem\deckedDiv\" />
+    <Folder Include="_address\route_\stem_\based_\parentDir\" />
+    <Folder Include="_address\route_\_sprig_\" />
+    <Folder Include="_address\route_\_stem_\" />
+    <Folder Include="_address\_route\division\co\_duct\" />
+    <Folder Include="_address\_route\division\co_\den\" />
+    <Folder Include="_address\_route\division\co_\divDenotation\_connection\" />
+    <Folder Include="_address\_route\division\re_\sub_\" />
+    <Folder Include="_address\_route\division_\denotation\%28retiring\divDnt\" />
+    <Folder Include="_address\_route\division_\denotation\re_\re_\" />
+    <Folder Include="_address\_route\division_\denotation\set\map_\location0nul\op_\unary_\normed_\" />
+    <Folder Include="_address\_route\division_\destination\byDenotation\set\map_\location0nul\op_\unary_\normalize_\" />
+    <Folder Include="_address\_route\division_\destination\byDenotation\set\map_\location0nul\op_\unary_\_normalize\" />
+    <Folder Include="_address\_route\division_\destination\byDenotation\set\map_\location0nul\op_\unary_\_normalize_\key2DirectoryIfNeed_\" />
+    <Folder Include="_address\_route\division_\destination\byDenotation\set\map_\location0nul_\keyAsDnts_\" />
+    <Folder Include="_address\_route\division_\destination\nulable\" />
+    <Folder Include="_address\_route\division_\destination\re_\" />
+    <Folder Include="_address\_route\division_\div\by_\" />
+    <Folder Include="_address\_route\division_\div\co\_duct\_ret\" />
+    <Folder Include="_address\_route\division_\div\co\_relPath\" />
+    <Folder Include="_address\_route\division_\div\dnted~\" />
+    <Folder Include="_address\_route\division_\div\doc\" />
+    <Folder Include="_address\_route\division_\_div\dirs\co\" />
+    <Folder Include="_address\_route\division_\_div\dir\eq\" />
+    <Folder Include="_address\_route\division_\_div\dir_\" />
+    <Folder Include="_address\_route\division_\_div\dsts\" />
+    <Folder Include="_address\_route\division_\_div\dst_\" />
+    <Folder Include="_address\_route\division_\_div\_dir\dnts\spliced\" />
+    <Folder Include="_address\_route\division_\_div\_dir\dnt\construct_\" />
+    <Folder Include="_address\_route\division_\_div\_dir\dnt\str\join\" />
+    <Folder Include="_address\_route\division_\_div\_dir\dnt\_parse\scan_\cha\" />
+    <Folder Include="_address\_route\division_\_div\_dir\dnt_\exted_\mainVered_\sameBase\" />
+    <Folder Include="_address\_route\division_\_div\_dir\dnt_\exted_\noDot\" />
+    <Folder Include="_address\_route\division_\_div\_dir\dnt_\exted_\_dotted\ext\" />
+    <Folder Include="_address\_route\division_\_div\_dir\dnt_\exted_\_dotted\txt\be_\" />
+    <Folder Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext\be_\ext_\" />
+    <Folder Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\nonempty_\ovAftDot\set\" />
+    <Folder Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\nonempty_\_ovAftDot\_aftDot\" />
+    <Folder Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\_nonempty\aftDot\be\vow\" />
+    <Folder Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\_nonempty\aftDot\vow\" />
+    <Folder Include="_address\_route\division_\_div\_dir\dnt_\_exted\ext_\_nonempty\aftDot\_be\cha\" />
+    <Folder Include="_address\_route\division_\_div\_dir\dnt~\doc\ext\be_\img\" />
+    <Folder Include="_address\_route\division_\_div\_dir\dnt~\doc\ext\set_\avi\" />
+    <Folder Include="_address\_route\division_\_div\_dir\dnt~\doc_\" />
+    <Folder Include="_address\_route\division_\_div\_dir\dnt~\_doc\name\be_\" />
+    <Folder Include="_address\_route\division_\_div\_dir\dnt~\_doc\txt\be_\" />
+    <Folder Include="_address\_route\division_\_div\_dir\doc\" />
+    <Folder Include="_address\_route\division_\_div\_dir\NewFolder1\" />
+    <Folder Include="_address\_route\division_\_div\_dir\_dnt\txt\be_\_valid\word\" />
+    <Folder Include="_address\_route\division_\_div\_dir\_dnt\txt\be_\_valid\_cha\" />
+    <Folder Include="_address\_route\division_\_div\_dir\_dnt\txt\vow_\" />
+    <Folder Include="_address\_route\division_\_div\_dir\_dnt\txt\_parse\" />
+    <Folder Include="_address\_route\division_\_div\_dst\" />
+    <Folder Include="_address\_vol\_disk\txt\be_\" />
+    <Folder Include="_address\_vol_\_name\" />
+    <Folder Include="_file\blob_\txt\" />
+    <Folder Include="_file\blob_\txt_\lines\asStream\" />
+    <Folder Include="_file\blob_\zip\of_\locationNulS\toTmp\" />
+    <Folder Include="_file\blob_\zip\op_\" />
+    <Folder Include="_file\create\" />
+    <Folder Include="_folders\" />
+    <Folder Include="_path_\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="folder\dnts_\_ignored\Settings1.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="folder\dnt_\cfg\Settings1.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="folder\doc_\nilnulCfg\Settings1.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="folder\_cfg\_destination\_dnt\_exts\Settings1.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="_address\_route\division_\_div\_dir\_dnt\txt\_compile\_check\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\_LINQ_%28Git\nilnul._fs_._LINQ_.csproj">
+      <Project>{e406a6e7-cb41-4d0a-a3d7-9cb38312334c}</Project>
+      <Name>nilnul._fs_._LINQ_</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <Target Name="PostBuildMacros">
+    <GetAssemblyIdentity AssemblyFiles="$(TargetPath)">
+      <Output TaskParameter="Assemblies" ItemName="Targets" />
+    </GetAssemblyIdentity>
+    <ItemGroup>
+      <VersionNumber Include="@(Targets->'%(Version)')" />
+      <MajorMinor Include="$([System.Text.RegularExpressions.Regex]::Replace(&quot;%(Targets.Version)&quot;, &quot;^([^\.]+)\.([^\.]+)(.*)$&quot;, &quot;$1.$2&quot;))" />
+    </ItemGroup>
+  </Target>
+  <PropertyGroup>
+    <nilnulTime>$([System.DateTime]::UtcNow.ToString("yyMMddHHmmss"))</nilnulTime>
+    <nilnulPattern4date>^.{6}</nilnulPattern4date>
+    <nilnulDate>$([System.Text.RegularExpressions.Regex]::Match($(nilnulTime), $(nilnulPattern4date)))</nilnulDate>
+    <nilnulPattern4clock>.{6}$</nilnulPattern4clock>
+    <nilnulClock>$([System.Text.RegularExpressions.Regex]::Match($(nilnulTime), $(nilnulPattern4clock)))</nilnulClock>
+    <nilnulClockCollapsed>$(nilnulClock.TrimStart('0'))</nilnulClockCollapsed>
+    <_nilnulClockPrefixed>.$(nilnulClockCollapsed)</_nilnulClockPrefixed>
+    <nilnulClockPrefixed>$(_nilnulClockPrefixed.TrimEnd('.'))</nilnulClockPrefixed>
+    <nilnulPatchRevision>$(nilnulDate)$(nilnulClockPrefixed)</nilnulPatchRevision>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEventDependsOn>
+	$(PostBuildEventDependsOn);
+	PostBuildMacros;
+</PostBuildEventDependsOn>
+    <PostBuildEvent>echo ConfigurationName is $(ConfigurationName)
+if $(ConfigurationName) == Release (
+	"NuGet.exe" pack "$(ProjectPath)" -Prop Configuration=$(ConfigurationName) -Exclude **/*.tt -Version @(MajorMinor).$(nilnulPatchRevision)
+	"NuGet.exe" push $(TargetName).@(MajorMinor).$(nilnulPatchRevision).nupkg -SkipDuplicate -Source local
+	"NuGet.exe" push $(TargetName).@(MajorMinor).$(nilnulPatchRevision).nupkg -SkipDuplicate -Source my
+) ELSE (
+	if  $(ConfigurationName)==Symbol (
+		"NuGet.exe" pack "$(ProjectPath)" -Symbols -Prop Configuration=$(ConfigurationName) -Exclude **/*.tt -Version @(MajorMinor).$(nilnulPatchRevision)
+		"NuGet.exe" push $(TargetName).@(MajorMinor).$(nilnulPatchRevision).symbols.nupkg -SkipDuplicate -Source local
+		"NuGet.exe" push $(TargetName).@(MajorMinor).$(nilnulPatchRevision).symbols.nupkg -SkipDuplicate -Source my
+	)
+	if  $(ConfigurationName)==Nuget (
+		"NuGet.exe" pack "$(ProjectPath)"  -Prop Configuration=$(ConfigurationName) -Exclude **/*.tt -Version @(MajorMinor).$(nilnulPatchRevision)
+		"NuGet.exe" push $(TargetName).@(MajorMinor).$(nilnulPatchRevision).nupkg -SkipDuplicate -Source nuget.org
+	)
+	if  $(ConfigurationName)==Dev2nuget (
+		"NuGet.exe" pack "$(ProjectPath)"  -Prop Configuration=$(ConfigurationName) -Exclude **/*.tt -Version @(MajorMinor).$(nilnulPatchRevision)-dev
+		"NuGet.exe" push $(TargetName).@(MajorMinor).$(nilnulPatchRevision)-dev.nupkg -SkipDuplicate -Source nuget.org
+	)
+)</PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+  </Target>
+  <Import Project="..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\..\(packages)\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\(packages)\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

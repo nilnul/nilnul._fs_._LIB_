@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- in reference to Microsoft configuration system such as:
+	app.config
+	.csproj
+
+-->
+<configuration>
+	<neglect>
+		1
+		<!-- ignore all dnts; this is equivalent to a patterned dnts_.Neglect-->
+	</neglect>
+	<git>
+		<push>
+			<run time="220902">
+				<done>
+					amazon,azure
+				</done>
+				<fail>
+					<svr name="github">
+						<xpn>unable to connect</xpn>
+					</svr>
+					<svr name="gitlab">
+						<xpn>
+							repo too large
+						</xpn>
+					</svr>
+				</fail>
+			</run>
+		</push>
+	</git>
+</configuration>
+

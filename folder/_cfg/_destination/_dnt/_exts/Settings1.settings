@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="nilnul.fs.folder._cfg._destination._dnt._exts" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="xec" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.xec</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

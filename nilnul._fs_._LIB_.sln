@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nilnul._fs_._LIB_", "nilnul._fs_._LIB_.csproj", "{2E04D4B6-65C2-4284-9BCD-6BCFFBD243B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		_Release|Any CPU = _Release|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Hbue40|Any CPU = Hbue40|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Symbol|Any CPU = Symbol|Any CPU
+		Symbols4Debug|Any CPU = Symbols4Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E04D4B6-65C2-4284-9BCD-6BCFFBD243B4}._Release|Any CPU.ActiveCfg = _Release|Any CPU
+		{2E04D4B6-65C2-4284-9BCD-6BCFFBD243B4}._Release|Any CPU.Build.0 = _Release|Any CPU
+		{2E04D4B6-65C2-4284-9BCD-6BCFFBD243B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E04D4B6-65C2-4284-9BCD-6BCFFBD243B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E04D4B6-65C2-4284-9BCD-6BCFFBD243B4}.Hbue40|Any CPU.ActiveCfg = Hbue40|Any CPU
+		{2E04D4B6-65C2-4284-9BCD-6BCFFBD243B4}.Hbue40|Any CPU.Build.0 = Hbue40|Any CPU
+		{2E04D4B6-65C2-4284-9BCD-6BCFFBD243B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E04D4B6-65C2-4284-9BCD-6BCFFBD243B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E04D4B6-65C2-4284-9BCD-6BCFFBD243B4}.Symbol|Any CPU.ActiveCfg = Symbol|Any CPU
+		{2E04D4B6-65C2-4284-9BCD-6BCFFBD243B4}.Symbol|Any CPU.Build.0 = Symbol|Any CPU
+		{2E04D4B6-65C2-4284-9BCD-6BCFFBD243B4}.Symbols4Debug|Any CPU.ActiveCfg = Symbols4Debug|Any CPU
+		{2E04D4B6-65C2-4284-9BCD-6BCFFBD243B4}.Symbols4Debug|Any CPU.Build.0 = Symbols4Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5EA3CDBB-3D65-4ABD-BB21-E1C317507150}
+	EndGlobalSection
+EndGlobal
